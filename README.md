@@ -1,2 +1,2 @@
-# askdgood-website
+# askdogood-website
 Professional holistic wellness website for Ask Do Good - empowering communities through natural healing
