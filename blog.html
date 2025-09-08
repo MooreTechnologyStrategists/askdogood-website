@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Healing Insights Blog | Ask DoGood</title>
+<link rel="icon" href="https://i.imgur.com/cyHX8Wz.png" type="image/png">
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--text:#f5f5f5;--muted:#bdbdbd;--accent:#16a34a;--border:#222}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Inter,Arial}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:20px 16px}
+header{position:sticky;top:0;background:#0b0b0bcc;border-bottom:1px solid var(--border);backdrop-filter:blur(8px);z-index:20}
+nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.cta{background:var(--accent);color:#061307;padding:10px 16px;border-radius:12px;font-weight:700}
+
+/* Page hero */
+.hero{position:relative;min-height:42vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background: radial-gradient(900px 500px at 20% 20%,#1f3a1a,transparent 60%),
+              radial-gradient(800px 400px at 80% 80%,#234b22,transparent 60%);}
+.hero h1{position:relative;z-index:1;font-size:clamp(28px,5vw,56px);text-shadow:0 6px 24px rgba(0,0,0,.6)}
+
+/* Post grid with title-on-image “mini-hero” */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.card-hero{position:relative;height:180px;display:flex;align-items:flex-end;justify-content:flex-start;
+  background-size:cover;background-position:center}
+.card-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,.1))}
+.card-title{position:relative;z-index:2;padding:12px 14px;font-weight:700}
+.card-body{padding:14px;color:var(--muted)}
+.footer{border-top:1px solid var(--border);margin-top:24px;color:var(--muted)}
+.float{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;border:0;background:linear-gradient(45deg,#ff6b35,#f7931e);color:#fff;font-size:1.2rem;cursor:pointer}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <nav>
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;color:var(--text)">
+      <img src="https://i.imgur.com/cyHX8Wz.png" width="36" height="36" style="border-radius:8px" alt=""> Ask Do Good
+    </a>
+    <div>
+      <a href="index.html#about" style="margin-right:12px">My Story</a>
+      <a href="index.html#services" style="margin-right:12px">Services</a>
+      <a href="index.html#shop" style="margin-right:12px">Shop</a>
+      <a href="mailto:askdogood@gmail.com" class="cta">Contact</a>
+    </div>
+  </nav>
+</div></header>
+
+<section class="hero"><h1>Healing Insights</h1></section>
+
+<main class="wrap">
+  <div id="blogGrid" class="grid">
+    <!-- IBS -->
+    <a class="card" href="how-i-cured-my-ibs-naturally.html">
+      <div class="card-hero" style="background-image:url('https://i.imgur.com/7saS1el.jpg')">
+        <div class="card-title">How I Cured My IBS Naturally</div>
+      </div>
+      <div class="card-body">7 years, zero meds. The step-by-step gut repair protocol.</div>
+    </a>
+
+    <!-- Graves -->
+    <a class="card" href="beating-graves-disease-without-meds.html">
+      <div class="card-hero" style="background-image:url('https://i.imgur.com/NxwQu0Y.jpg')">
+        <div class="card-title">Beating Graves Disease Without Meds</div>
+      </div>
+      <div class="card-body">From thyroid storm to stable labs—naturally.</div>
+    </a>
+
+    <!-- Superfoods -->
+    <a class="card" href="top-10-superfoods-for-autoimmune-healing.html">
+      <div class="card-hero" style="background-image:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1600&q=60')">
+        <div class="card-title">Top 10 Superfoods for Autoimmune Healing</div>
+      </div>
+      <div class="card-body">What to eat, why it works, and how to use it weekly.</div>
+    </a>
+  </div>
+</main>
+
+<footer class="footer"><div class="wrap">
+  © <span id="y"></span> Ask DoGood • <a href="index.html#home">Back to Home</a>
+</div></footer>
+
+<button class="float" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superfood Meal Prep Guide — $37 | Ask DoGood</title>
+<link rel="icon" href="https://i.imgur.com/cyHX8Wz.png" type="image/png">
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--text:#f5f5f5;--muted:#bdbdbd;--accent:#16a34a;--border:#222}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Inter,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}.wrap{max-width:1100px;margin:0 auto;padding:24px 16px}
+header{position:sticky;top:0;background:#0b0b0bcc;border-bottom:1px solid var(--border);backdrop-filter:blur(8px)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.cta{background:var(--accent);color:#061307;padding:10px 16px;border-radius:12px;font-weight:700}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px}
+.price{display:inline-block;background:#111;border:1px solid var(--border);padding:6px 10px;border-radius:10px;margin-left:8px}
+.cover{width:100%;height:320px;border-radius:14px;object-fit:cover;margin:10px 0}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.tab{padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:#101010;color:#fff;cursor:pointer}
+.tab.active{background:#182818;border-color:#2d5016}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+.recipe{background:#111;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.img{height:150px;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(135deg,#a8d46f,#4a7c26)}
+.section{padding:0 12px 12px}.recipe h4{margin:10px 12px}.muted{color:var(--muted)}
+footer{border-top:1px solid var(--border);margin-top:24px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <nav>
+    <a href="/index.html" style="display:flex;align-items:center;gap:10px;color:var(--text)">
+      <img src="https://i.imgur.com/cyHX8Wz.png" width="36" height="36" style="border-radius:8px" alt=""> Ask Do Good
+    </a>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a href="#start">Recipes</a>
+      <a class="cta" href="https://buy.stripe.com/6oU14ogqW6f6g2I2kC0sU02" target="_blank" rel="noopener">Buy Guide — $37</a>
+    </div>
+  </nav>
+</div></header>
+
+<main class="wrap" id="start">
+  <div class="hero">
+    <div class="card">
+      <h1 style="margin:0 0 8px">Superfood Meal Prep Guide <span class="price">$37</span></h1>
+      <p class="muted">Six styles—Plant-Based, Vegan, Vegetarian, Pescatarian, Flexitarian, Traditional-Healthier—each with five fast recipes.</p>
+      <img class="cover" src="https://i.imgur.com/KRTzgGu.png" alt="Superfood Meal Prep Guide cover">
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Instant access</h3>
+      <p class="muted">Secure Stripe checkout. Download + email receipt.</p>
+      <p><a class="cta" href="https://buy.stripe.com/REPLACE_WITH_MEAL_PREP_LINK" target="_blank" rel="noopener">Get Recipes — $37</a></p>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div id="recipes"></div>
+</main>
+
+<footer><div class="wrap" style="color:var(--muted)">© <span id="y"></span> Ask DoGood • <a href="#start">Back to top ↑</a></div></footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+
+const DATA = {
+  "Plant-Based 🥦": [
+    {t:"Green Goddess Bowl", e:"🥗", ing:["Quinoa","Chickpeas","Avocado","Cucumber","Greens","Lemon-tahini"], steps:["Cook quinoa","Rinse chickpeas","Chop veg","Whisk tahini+lemon","Assemble"]},
+    {t:"Sweet Potato & Kale Hash", e:"🍠", ing:["Sweet potatoes","Kale","Onion","Olive oil","Garlic"], steps:["Roast cubes","Sauté onion+garlic","Add kale","Fold in potatoes"]},
+    {t:"Turmeric Lentil Soup", e:"🥣", ing:["Red lentils","Carrot","Celery","Turmeric","Veg broth"], steps:["Sauté veg","Add lentils+broth","Simmer 20 min"]},
+    {t:"Beet Citrus Salad", e:"🍊", ing:["Beets","Orange","Arugula","Pistachios","Olive oil"], steps:["Roast beets","Segment orange","Toss","Dress"]},
+    {t:"Cauli-Rice Stir Fry", e:"🥦", ing:["Cauli rice","Peas","Carrots","Tamari","Sesame"], steps:["Sauté rice","Add veg","Finish with tamari+sesame"]}
+  ],
+  "Vegan 🌱": [
+    {t:"Chickpea Tikka Bowls", e:"🍛", ing:["Chickpeas","Tomato sauce","Tikka spice","Spinach","Rice"], steps:["Simmer sauce","Add chickpeas","Wilt spinach","Serve"]},
+    {t:"Tofu Sheet-Pan Fajitas", e:"🌮", ing:["Tofu","Peppers","Onion","Fajita spice"], steps:["Press+slice tofu","Toss with veg","Roast 20 min"]},
+    {t:"Sesame Soba Salad", e:"🍜", ing:["Soba","Edamame","Cabbage","Sesame dressing"], steps:["Boil soba","Cool","Toss"]},
+    {t:"Lemon Herb Couscous", e:"🍋", ing:["Couscous","Parsley","Lemon","Olive oil"], steps:["Steam","Fluff","Fold herbs"]},
+    {t:"Creamy Tomato Orzo", e:"🍅", ing:["Orzo","Tomato puree","Coconut milk","Basil"], steps:["Boil orzo","Simmer sauce","Combine"]}
+  ],
+  "Vegetarian 🧀": [
+    {t:"Greek Power Bowls", e:"🥗", ing:["Farro","Feta","Tomato","Cucumber","Olives","Tzatziki"], steps:["Cook farro","Chop veg","Assemble"]},
+    {t:"Spinach Egg Bites", e:"🥚", ing:["Eggs","Spinach","Cheddar","Onion"], steps:["Whisk","Fold fillings","Bake 18 min"]},
+    {t:"Caprese Pesto Pasta", e:"🍝", ing:["Pasta","Mozzarella","Tomato","Pesto"], steps:["Boil pasta","Toss with pesto","Add mozz"]},
+    {t:"Mushroom Quinoa Skillet", e:"🍄", ing:["Quinoa","Mushrooms","Thyme","Broth"], steps:["Sauté mushrooms","Add quinoa+broth","Simmer"]},
+    {t:"Veggie Fried Rice", e:"🍚", ing:["Rice","Eggs","Peas","Carrots","Tamari"], steps:["Scramble eggs","Stir-fry","Season"]}
+  ],
+  "Pescatarian 🐟": [
+    {t:"Lemon-Dill Salmon", e:"🐟", ing:["Salmon","Lemon","Dill","Broccoli","Quinoa"], steps:["Bake salmon","Steam broccoli","Serve over quinoa"]},
+    {t:"Shrimp Stir-Fry", e:"🦐", ing:["Shrimp","Snap peas","Carrots","Ginger","Tamari"], steps:["Sear shrimp","Stir-fry veg","Combine"]},
+    {t:"Tuna Avocado Bowls", e:"🥑", ing:["Tuna","Avocado","Rice","Cucumber"], steps:["Mix tuna+avocado","Serve over rice"]},
+    {t:"Mediterranean Cod", e:"🍅", ing:["Cod","Tomato","Olives","Capers"], steps:["Bake with toppings 15 min"]},
+    {t:"Sardine Toasts", e:"🍞", ing:["Whole-grain toast","Sardines","Lemon","Parsley"], steps:["Toast","Top","Finish lemon+herbs"]}
+  ],
+  "Flexitarian 🍗": [
+    {t:"Chicken Veggie Trays", e:"🍗", ing:["Chicken thighs","Zucchini","Peppers","Spice blend"], steps:["Roast 25–30 min"]},
+    {t:"Turkey Taco Bowls", e:"🌮", ing:["Ground turkey","Black beans","Corn","Salsa","Rice"], steps:["Brown turkey","Assemble bowls"]},
+    {t:"Greek Yogurt Chicken Salad", e:"🥗", ing:["Chicken","Greek yogurt","Celery","Grapes","Walnuts"], steps:["Mix; chill"]},
+    {t:"One-Pot Orzo & Chicken", e:"🍲", ing:["Chicken","Orzo","Spinach","Lemon"], steps:["Sear","Add orzo+broth","Finish spinach+lemon"]},
+    {t:"Veg-Heavy Chili", e:"🌶️", ing:["Turkey (opt)","Beans","Tomato","Spices"], steps:["Simmer 30 min"]}
+  ],
+  "Traditional, Healthier 🍽️": [
+    {t:"Light Mac & Cheese", e:"🧀", ing:["Whole-wheat pasta","Cheddar","Greek yogurt"], steps:["Boil pasta","Make sauce","Bake"]},
+    {t:"Air-Fryer Nuggets", e:"🍗", ing:["Chicken breast","Egg","WW crumbs"], steps:["Coat","Air-fry 12–14 min"]},
+    {t:"Sheet-Pan Meatballs", e:"🥩", ing:["Lean beef/turkey","Egg","Oats","Herbs"], steps:["Mix","Bake 15–18 min"]},
+    {t:"Veg-Loaded Sloppy Joes", e:"🥪", ing:["Lean beef","Tomato sauce","Peppers","Carrots"], steps:["Sauté","Simmer","Serve"]},
+    {t:"Lean Pot Roast", e:"🍖", ing:["Lean roast","Potatoes","Carrots","Onion"], steps:["Sear","Slow-cook 6–8h","Portion"]}
+  ]
+};
+
+const tabs = document.getElementById('tabs');
+const list = document.getElementById('recipes');
+const cats = Object.keys(DATA);
+
+function render(cat){
+  tabs.innerHTML = cats.map(c=>`<button class="tab ${c===cat?'active':''}" onclick="render('${c.replace(/'/g,"&#39;")}')">${c}</button>`).join('');
+  list.innerHTML = `<div class="grid">${
+    DATA[cat].map(r=>`
+      <article class="recipe">
+        <div class="img">${r.e}</div>
+        <h4>${r.t}</h4>
+        <div class="section"><strong>Ingredients</strong><ul>${r.ing.map(i=>`<li>${i}</li>`).join('')}</ul></div>
+        <div class="section"><strong>Steps</strong><ol>${r.steps.map(s=>`<li>${s}</li>`).join('')}</ol></div>
+      </article>
+    `).join('')
+  }</div>`;
+  window.location.hash = '#start';
+}
+render(cats[0]);
+</script>
+</body>
+</html>
