@@ -1,18 +1,41 @@
-﻿name: Deploy AskDoGood to Azure Static Web Apps
+name: Deploy AskDoGood to Azure Static Web Apps
+
 on:
   push:
     branches: [ main ]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches: [ main ]
   workflow_dispatch:
+
 jobs:
   build_and_deploy:
+    # Run on pushes and PR updates (but not when a PR is closed)
+    if: github.event_name != 'pull_request' || github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Build & Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # 👇 REQUIRED
+          deployment_action: upload
+
+          # Your site is plain static files at the repo root
           app_location: "/"
-          api_location: "api"
-          output_location: "/"
+          api_location: ""        # leave empty unless you actually have an Azure Functions app in /api
+          output_location: ""     # no build output folder for plain HTML
+
+  close_pull_request_environment:
+    # Auto-close preview envs when a PR is closed (optional but nice)
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          deployment_action: close
