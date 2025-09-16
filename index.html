@@ -32,6 +32,9 @@
 
   <!-- Favicon -->
   <link rel="icon" href="https://i.imgur.com/cyHX8Wz.png" type="image/png">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <link rel="preconnect" href="https://js.stripe.com">
 
@@ -118,6 +121,19 @@
     /* Floating Back-to-Top */
     .fab-top{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:linear-gradient(45deg,#ff6b35,#f7931e);color:#fff;border:0;font-size:1.3rem;cursor:pointer;z-index:1001}
 
+    /* Missing styles for new sections */
+    .gamification{padding:3rem 0;background:linear-gradient(135deg,#4a7c26,#2d5016);color:#fff}
+    .rewards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:1.6rem}
+    .reward-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:18px;text-align:center}
+    .nft-badge{font-size:2rem;margin-bottom:1rem}
+    .credentials{padding:3rem 0;background:#fafafa}
+    .credentials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:1.6rem}
+    .credential-item{text-align:center;padding:20px}
+    .credential-item i{font-size:2rem;color:#4a7c26;margin-bottom:1rem}
+    .social-proof{padding:3rem 0;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-align:center}
+    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin-top:2rem}
+    .disclaimer{background:#000;color:#888;padding:2rem;text-align:center;font-size:.9rem;line-height:1.4}
+
     @media(max-width:900px){.about-content{grid-template-columns:1fr}.hero h1{font-size:2.4rem}}
     @media(max-width:480px){.about-photos img{width:170px;height:170px}.service-thumb{width:160px;height:160px}}
   </style>
@@ -153,12 +169,6 @@
       <p class="hero-subtitle">I'm the dopest female in holistic wellness—empowering communities to heal naturally. From beating Graves disease to curing IBS: real results, real transparency.</p>
       <a href="#services" class="cta-button">Start Your Healing Journey</a>
 
-       <div class="trust-badges">
-                        <span class="badge"><i class="fas fa-graduation-cap"></i> NASM Studied</span>
-                        <span class="badge"><i class="fas fa-globe"></i> International Speaker</span>
-                        <span class="badge"><i class="fas fa-award"></i> Cancer Survivor</span>
-                    </div>
-
       <div class="hero-stats">
         <div class="stat-item"><div class="stat-number">7</div><div class="stat-label">Years IBS Free</div></div>
         <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Autoimmune Reversals</div></div>
@@ -166,6 +176,229 @@
       </div>
     </div>
   </section>
+
+  <!-- Collaboration -->
+  <section id="collaborate" class="collaboration">
+    <div class="container">
+      <h2 class="section-title" style="color:#fff">Let's Collaborate</h2>
+      <p style="margin:0 auto 1rem;max-width:780px">Partner with me to amplify healing in our communities. Bloggers, researchers, doctors, and holistic advocates welcome.</p>
+      <div class="collab-types">
+        <div class="collab-card">
+          <h3>🤝 Content Collaboration</h3>
+          <p>Joint articles, challenges, and educational content that drive real outcomes.</p>
+          <button class="cta-button" onclick="location.href='mailto:askdogood@gmail.com?subject=Content Collaboration Inquiry'">Partner With Me</button>
+        </div>
+        <div class="collab-card">
+          <h3>🔬 Research Partnerships</h3>
+          <p>Validate and share evidence-based natural healing methods together.</p>
+          <button class="cta-button" onclick="location.href='mailto:askdogood@gmail.com?subject=Research Partnership Inquiry'">Research Together</button>
+        </div>
+        <div class="collab-card">
+          <h3>💰 Affiliate Opportunities</h3>
+          <p>Promote aligned products and services while creating shared value.</p>
+          <button class="cta-button" onclick="location.href='mailto:askdogood@gmail.com?subject=Affiliate Partnership Inquiry'">Join Affiliate Program</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="blog-preview">
+    <div class="container">
+      <h2 class="section-title">Latest Healing Insights</h2>
+      
+      <!-- Writer's Journey Section -->
+      <div style="background: rgba(45, 80, 22, 0.05); padding: 40px; border-radius: 15px; margin-bottom: 2rem; text-align: center;">
+        <h3 style="color: #2d5016; margin-bottom: 1.5rem; font-size: 1.8rem;">From Sick Patient to Healing Writer</h3>
+        
+        <div style="max-width: 800px; margin: 0 auto; text-align: left; color: #555; line-height: 1.8;">
+          <p style="margin-bottom: 1.5rem;">Writing saved my life before I even knew I was dying. At 12 years old, I started journaling my symptoms when doctors couldn't figure out what was wrong with me. Those early notebooks became my first health detective work.</p>
+          
+          <p style="margin-bottom: 1.5rem;">Through high school, I wrote poetry about feeling different, about energy crashes, about watching friends eat foods that made me sick. I didn't know I was documenting autoimmune disease - I just knew writing helped me process the isolation.</p>
+          
+          <p style="margin-bottom: 1.5rem;">When I finally got my Graves disease diagnosis at 22, I started blogging my healing journey. Every supplement tried, every food eliminated, every small victory documented. Those raw, honest posts connected with people going through similar struggles.</p>
+          
+          <p style="margin-bottom: 1.5rem;"><strong style="color: #2d5016;">Now my writing serves a bigger purpose:</strong> turning my pain into protocols that actually help people heal. Every article comes from lived experience, every tip has been tested in my own body first.</p>
+          
+          <p style="margin-bottom: 0; font-style: italic; color: #4a7c26;">I write because when you're sick and searching for answers at 3 AM, you need someone who's been there to tell you what really works.</p>
+        </div>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <!-- BLOG 1 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1200&q=60" alt="Leafy greens and gut health">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">How I Cured My IBS Naturally</h3>
+            <p class="blog-excerpt">The complete protocol that eliminated 7 years of digestive suffering—prebiotics, enzymes, and strategic elimination…</p>
+            <a href="how-i-cured-my-ibs-naturally.html" class="cta-button" style="padding:.5rem 1rem;font-size:.9rem">Read Full Story</a>
+          </div>
+        </article>
+
+        <!-- BLOG 2 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=60" alt="Calm energy and thyroid wellness">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Beating Graves Disease Without Meds</h3>
+            <p class="blog-excerpt">From thyroid storm to complete healing using targeted nutrition and lifestyle changes…</p>
+            <a href="beating-graves-disease-without-meds.html" class="cta-button" style="padding:.5rem 1rem;font-size:.9rem">Read Full Story</a>
+          </div>
+        </article>
+
+        <!-- BLOG 3 -->
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=60" alt="Superfoods assortment">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Top 10 Superfoods for Autoimmune Healing</h3>
+            <p class="blog-excerpt">The specific foods that helped reverse my autoimmune conditions and how to use them…</p>
+            <a href="top-10-superfoods-for-autoimmune-healing.html" class="cta-button" style="padding:.5rem 1rem;font-size:.9rem">Read Full Story</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:16px">
+        <a href="blog.html" class="cta-button" style="padding:.7rem 1.2rem">View All Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join the Healing Revolution</h2>
+      <p>Get weekly tips, success stories, and exclusive content.</p>
+      <form id="newsletter-form" class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+        <button type="submit">Join Now</button>
+      </form>
+      <div id="newsletter-message" style="margin-top:10px;display:none"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div>
+        <h3>Ask DoGood</h3>
+        <p>Transforming lives through evidence-based natural health solutions.</p>
+        <p>Fort Washington, MD</p>
+        <p>Email: askdogood@gmail.com</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#scanner" style="color: #ccc; text-decoration: none;">Health Scanner</a></li>
+          <li><a href="#rewards" style="color: #ccc; text-decoration: none;">NFT Rewards</a></li>
+          <li><a href="#shop" style="color: #ccc; text-decoration: none;">Shop</a></li>
+          <li><a href="#blog" style="color: #ccc; text-decoration: none;">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Health Resources</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="thyroid-healing-system.html" style="color: #ccc; text-decoration: none;">Thyroid Health Guide</a></li>
+          <li><a href="ibs-freedom-protocol.html" style="color: #ccc; text-decoration: none;">IBS Recovery Plan</a></li>
+          <li><a href="superfood-meal-prep-guide.html" style="color: #ccc; text-decoration: none;">Meal Prep Guide</a></li>
+          <li><a href="autoimmune-recovery-guide.html" style="color: #ccc; text-decoration: none;">Supplement Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <a href="https://instagram.com/askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com/@askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+          <a href="https://tiktok.com/@askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="disclaimer">
+      <strong>IMPORTANT MEDICAL DISCLAIMER:</strong> The information provided on this website is for educational and informational purposes only and is not intended as medical advice. I am not a licensed medical doctor, and the content should not be used to diagnose, treat, cure, or prevent any disease. Always consult with a qualified healthcare professional before making any changes to your diet, exercise routine, or health regimen, especially if you have existing medical conditions or are taking medications. Individual results may vary, and what works for one person may not work for another. This site may contain affiliate links, and I may earn a commission from purchases made through these links at no additional cost to you.
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="fab-top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    function showProducts(category){
+      document.querySelectorAll('[id$="-display"]').forEach(el=>el.style.display='none');
+      if(category==='ebooks'){ const el=document.getElementById('ebooks-display'); if(el){ el.style.display='block'; el.scrollIntoView({behavior:'smooth'}); } }
+    }
+
+    function loadWordPressBlog(slug){ alert('Connect your WordPress URL then open /'+slug); }
+    async function loadAllBlogs(){ try{ const r=await fetch('https://askdogood.com/wp-json/wp/v2/posts?per_page=9'); if(!r.ok) throw 0; const posts=await r.json(); const grid=document.getElementById('blogGrid'); posts.forEach(p=>{ const c=document.createElement('article'); c.className='blog-card'; c.innerHTML=`<div class="blog-image">🌿</div><div class="blog-content"><h3 class="blog-title">${p.title.rendered}</h3><p class="blog-excerpt">${p.excerpt.rendered.replace(/<[^>]*>/g,'').slice(0,150)}…</p><a class="cta-button" style="padding:.5rem 1rem;font-size:.9rem" href="${p.link}" target="_blank" rel="noopener">Read Full Story</a></div>`; grid.appendChild(c);}); }catch(e){ /* silent fail */ } }
+
+    function subscribeNewsletter(e){
+      e.preventDefault();
+      const email=document.getElementById('newsletter-email').value.trim();
+      const msg=document.getElementById('newsletter-message');
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ msg.textContent='⚠️ Please enter a valid email.'; msg.style.display='block'; return; }
+      msg.innerHTML='🎉 Welcome to the healing revolution! Check your inbox for a welcome note.'; 
+      msg.style.display='block';
+      document.getElementById('newsletter-form').reset();
+    }
+
+    function startScanner() {
+      alert('Scanner feature coming soon! This will use your device camera to scan food products and provide instant health analysis for diabetes and high blood pressure.');
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.style.backgroundColor = 'rgba(255,255,255,0.95)';
+        header.style.backdropFilter = 'blur(10px)';
+      } else {
+        header.style.backgroundColor = 'var(--bg-light)';
+        header.style.backdropFilter = 'none';
+      }
+    });
+  </script>
+
+  <!-- Stripe Checkout -->
+  <script src="https://js.stripe.com/v3"></script>
+  <script>
+    window.buy = async function(productKey){
+      try {
+        const resp = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ product: productKey })
+        });
+        const data = await resp.json();
+        if (!data?.id) throw new Error(data?.error || 'No session from backend');
+        const stripe = Stripe(data.pk);
+        const { error } = await stripe.redirectToCheckout({ sessionId: data.id });
+        if (error) alert(error.message);
+      } catch (e) {
+        alert('Checkout error: ' + e.message);
+      }
+    };
+  </script>
+</body>
+</html>
 
   <!-- About -->
   <section id="about" class="about-me">
@@ -183,11 +416,25 @@
         </div>
         <div class="about-text">
           <h3 style="color:#2d5016;margin-bottom:1rem">From Patient to Healer</h3>
-          <p>I battled Graves disease, Hashimoto's, thyroid storm, nodules, and thyroid cancer—while suffering 7 years of IBS. I refused the “meds forever” script.</p>
+          <p>I battled Graves disease, Hashimoto's, thyroid storm, nodules, and thyroid cancer—while suffering 7 years of IBS. I refused the "meds forever" script.</p>
           <p>I healed naturally: prebiotics, digestive enzymes, kombucha, low sodium/sugar/alcohol; plus coconut water, alkaline water, and beets.</p>
-          <p style="font-weight:600;color:#2d5016">I don’t teach theories—I share what actually worked.</p>
+          <p style="font-weight:600;color:#2d5016">I don't teach theories—I share what actually worked.</p>
           <a href="https://calendly.com/askdogood" target="_blank" rel="noopener" class="cta-button">Get Your Personalized Plan</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Story Section -->
+  <section class="personal-story-section" style="background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); color: white; padding: 50px 40px; margin: 40px 0;">
+    <div class="container">
+      <h3 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">My Journey from IBS Hell to Complete Freedom</h3>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">For 7 years, I couldn't eat like a normal person. I couldn't just say "I have a taste for something" and go get it or chef it up in the kitchen. No.</p>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">I could only eat cream of wheat, Italian ice and drink water. I had GERD, heartburn, palpitations, and even though I had an amazing doctor, it took 7 years for me to find relief.</p>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">The real healing began when I met my millionaire boyfriend who was also like a fitness trainer. He saw me come home from work sick one day, went to Whole Foods, and bought me a plethora of 'digestive goodies.'</p>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;"><strong>I weaned myself off the meds and have been off them for about 10 years now.</strong></p>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://www.calendly.com/askdogood" style="background: #4CAF50; color: white; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; text-decoration: none; margin: 10px; display: inline-block;">Book 15-min Q&A</a>
       </div>
     </div>
   </section>
@@ -264,440 +511,127 @@
       </div>
     </div>
   </section>
-<section class="features-section" id="scanner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px; color: white;">
-  <div class="container">
-    <h2 class="section-title" style="color: white;">Revolutionary Health Scanner App</h2>
-    <p style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">AI-Powered Health Assessment in 60 Seconds</p>
-    
-    <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-      <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
-        <h3>Instant Analysis</h3>
-        <p>Advanced algorithms analyze your symptoms, lifestyle, and health markers</p>
+
+  <!-- Revolutionary Health Scanner -->
+  <section class="features-section" id="scanner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px; color: white;">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Revolutionary Health Scanner App</h2>
+      <p style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">AI-Powered Health Assessment in 60 Seconds</p>
+      
+      <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+        <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
+          <h3>Instant Analysis</h3>
+          <p>Advanced algorithms analyze your symptoms, lifestyle, and health markers</p>
+        </div>
+        <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+          <h3>Personalized Insights</h3>
+          <p>Get customized recommendations based on your unique health profile</p>
+        </div>
+        <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
+          <h3>Progress Tracking</h3>
+          <p>Monitor your health improvements with daily wellness scores</p>
+        </div>
       </div>
-      <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
-        <h3>Personalized Insights</h3>
-        <p>Get customized recommendations based on your unique health profile</p>
-      </div>
-      <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
-        <h3>Progress Tracking</h3>
-        <p>Monitor your health improvements with daily wellness scores</p>
+      
+      <div style="text-align: center;">
+        <h3>Join the Beta Testing Program</h3>
+        <p>Be among the first to experience the future of personal health monitoring</p>
+        <button style="background: linear-gradient(45deg, #00ff88, #00cc6a); color: #000; border: none; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; cursor: pointer; font-weight: bold;">Get Early Access</button>
+        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Limited spots available • No credit card required</p>
       </div>
     </div>
-    
-    <div style="text-align: center;">
-      <h3>Join the Beta Testing Program</h3>
-      <p>Be among the first to experience the future of personal health monitoring</p>
-      <button style="background: linear-gradient(45deg, #00ff88, #00cc6a); color: #000; border: none; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; cursor: pointer; font-weight: bold;">Get Early Access</button>
-      <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Limited spots available • No credit card required</p>
+  </section>
+
+  <!-- Gamification -->
+  <section class="gamification" id="rewards">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Earn Rewards & NFT Badges</h2>
+      <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Make healthy eating fun and rewarding! Compete with others and collect exclusive NFT achievements.</p>
+      
+      <div class="rewards-grid">
+        <div class="reward-card">
+          <div class="nft-badge">🥇</div>
+          <h3>Healthy Choice Champion</h3>
+          <p>Scan 50 healthy products and earn your first NFT badge</p>
+        </div>
+        <div class="reward-card">
+          <div class="nft-badge">📊</div>
+          <h3>Health Tracker Pro</h3>
+          <p>Upload 25 grocery receipts to unlock advanced analytics</p>
+        </div>
+        <div class="reward-card">
+          <div class="nft-badge">👑</div>
+          <h3>Leaderboard Legend</h3>
+          <p>Reach top 10 on monthly leaderboard for exclusive rewards</p>
+        </div>
+        <div class="reward-card">
+          <div class="nft-badge">🎯</div>
+          <h3>Consistency King</h3>
+          <p>30-day scanning streak unlocks premium features</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-               
-
-        <section class="gamification" id="rewards">
-            <div class="container">
-                <h2 class="section-title" style="color: white;">Earn Rewards & NFT Badges</h2>
-                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
-                    Make healthy eating fun and rewarding! Compete with others and collect exclusive NFT achievements.
-                </p>
-                
-                <div class="rewards-grid">
-                    <div class="reward-card">
-                        <div class="nft-badge">🥇</div>
-                        <h3>Healthy Choice Champion</h3>
-                        <p>Scan 50 healthy products and earn your first NFT badge</p>
-                    </div>
-                    <div class="reward-card">
-                        <div class="nft-badge">📊</div>
-                        <h3>Health Tracker Pro</h3>
-                        <p>Upload 25 grocery receipts to unlock advanced analytics</p>
-                    </div>
-                    <div class="reward-card">
-                        <div class="nft-badge">👑</div>
-                        <h3>Leaderboard Legend</h3>
-                        <p>Reach top 10 on monthly leaderboard for exclusive rewards</p>
-                    </div>
-                    <div class="reward-card">
-                        <div class="nft-badge">🎯</div>
-                        <h3>Consistency King</h3>
-                        <p>30-day scanning streak unlocks premium features</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="credentials">
-            <div class="container">
-                <h2 class="section-title">Expertise You Can Trust</h2>
-                <div class="credentials-grid">
-                    <div class="credential-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>NASM Education</h3>
-                        <p>Completed comprehensive studies at the National Academy of Sports Medicine, focusing on nutrition and exercise physiology.</p>
-                    </div>
-                    <div class="credential-item">
-                        <i class="fas fa-microphone"></i>
-                        <h3>International Speaker</h3>
-                        <p>Presented on thyroid physiology and metabolism at conferences in Dubai and Paris (2022-2023), sharing evidence-based insights.</p>
-                    </div>
-                    <div class="credential-item">
-                        <i class="fas fa-heart"></i>
-                        <h3>Personal Experience</h3>
-                        <p>Overcame Graves disease, Hashimoto's, thyroid cancer, and IBS through natural healing methods and lifestyle changes.</p>
-                    </div>
-                    <div class="credential-item">
-                        <i class="fas fa-flask"></i>
-                        <h3>Evidence-Based Approach</h3>
-                        <p>All recommendations backed by scientific research, USDA guidelines, and American Heart Association standards.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="social-proof">
-            <div class="container">
-                <h2 class="section-title">Trusted by Thousands</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">50K+</div>
-                        <p>Monthly Readers</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10K+</div>
-                        <p>Health Scans Completed</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <p>Success Stories</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">98%</div>
-                        <p>Satisfaction Rate</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-   <!-- Add this RIGHT AFTER the closing </section> tag of the about-me section -->
-
-<section class="personal-story-section" style="background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); color: white; padding: 50px 40px; margin: 40px 0;">
-  <div class="container">
-    <h3 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">My Journey from IBS Hell to Complete Freedom</h3>
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">For 7 years, I couldn't eat like a normal person. I couldn't just say "I have a taste for something" and go get it or chef it up in the kitchen. No.</p>
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">I could only eat cream of wheat, Italian ice and drink water. I had GERD, heartburn, palpitations, and even though I had an amazing doctor, it took 7 years for me to find relief.</p>
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">The real healing began when I met my millionaire boyfriend who was also like a fitness trainer. He saw me come home from work sick one day, went to Whole Foods, and bought me a plethora of 'digestive goodies.'</p>
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;"><strong>I weaned myself off the meds and have been off them for about 10 years now.</strong></p>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="https://www.calendly.com/askdogood" style="background: #4CAF50; color: white; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; text-decoration: none; margin: 10px; display: inline-block;">Book 15-min Q&A</a>
+  <!-- Credentials -->
+  <section class="credentials">
+    <div class="container">
+      <h2 class="section-title">Expertise You Can Trust</h2>
+      <div class="credentials-grid">
+        <div class="credential-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>NASM Education</h3>
+          <p>Completed comprehensive studies at the National Academy of Sports Medicine, focusing on nutrition and exercise physiology.</p>
+        </div>
+        <div class="credential-item">
+          <i class="fas fa-microphone"></i>
+          <h3>International Speaker</h3>
+          <p>Presented on thyroid physiology and metabolism at conferences in Dubai and Paris (2022-2023), sharing evidence-based insights.</p>
+        </div>
+        <div class="credential-item">
+          <i class="fas fa-heart"></i>
+          <h3>Personal Experience</h3>
+          <p>Overcame Graves disease, Hashimoto's, thyroid cancer, and IBS through natural healing methods and lifestyle changes.</p>
+        </div>
+        <div class="credential-item">
+          <i class="fas fa-flask"></i>
+          <h3>Evidence-Based Approach</h3>
+          <p>All recommendations backed by scientific research, USDA guidelines, and American Heart Association standards.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>     
+  </section>
+
+  <!-- Social Proof -->
+  <section class="social-proof">
+    <div class="container">
+      <h2 class="section-title">Trusted by Thousands</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <p>Monthly Readers</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10K+</div>
+          <p>Health Scans Completed</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <p>Success Stories</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <p>Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Shop -->
   <section id="shop" class="shop">
     <div class="container">
       <h2 class="section-title">Ask DoGood Shop</h2>
       <p style="text-align:center;color:#555;margin-bottom:16px">Curated products to support your healing journey.</p>
-
-      <div class="shop-categories">
-        <div class="category-card" onclick="location.href='autoimmune-recovery-guide.html#buy'">
-          <div class="category-image" style="background:#fff">
-            <img src="https://i.imgur.com/nNJwWwt.png" alt="Autoimmune Recovery Guide" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="category-content">
-            <h3>Autoimmune Recovery Guide</h3>
-            <div class="category-price">$27</div>
-          </div>
-        </div>
-
-        <div class="category-card" onclick="location.href='superfood-meal-prep-guide.html#start'">
-          <div class="category-image" style="background:#fff">
-            <img src="https://i.imgur.com/KRTzgGu.png" alt="Superfood Meal Prep Guide" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="category-content">
-            <h3>Superfood Meal Prep Guide</h3>
-            <div class="category-price">$37</div>
-          </div>
-        </div>
-
-        <div class="category-card" onclick="location.href='weight-loss-blueprint.html#transform'">
-          <div class="category-image" style="background:#fff">
-            <img src="https://i.imgur.com/4lsQfWs.png" alt="Weight Loss Blueprint" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="category-content">
-            <h3>Weight Loss Blueprint</h3>
-            <div class="category-price">$67</div>
-          </div>
-        </div>
-
-        <div class="category-card" onclick="location.href='ibs-freedom-protocol.html#start'">
-          <div class="category-image" style="background:#fff">
-            <img src="https://i.imgur.com/Q1NJk4a.png" alt="IBS Freedom Protocol" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="category-content">
-            <h3>IBS Freedom Protocol</h3>
-            <div class="category-price">$47</div>
-          </div>
-        </div>
-
-        <div class="category-card" onclick="location.href='thyroid-healing-system.html#start'">
-          <div class="category-image" style="background:#fff">
-            <img src="https://i.imgur.com/w6EbZD4.png" alt="Thyroid Healing System" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div class="category-content">
-            <h3>Thyroid Healing System</h3>
-            <div class="category-price">$127</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="category-card" onclick="location.href='amazon-favorites.html'">
-  <div class="category-image" style="display:flex;align-items:center;justify-content:center;font-size:2rem;color:#fff">
-    🛒
-  </div>
-  <div class="category-content">
-    <h3>DoGood’s Amazon Favorites</h3>
-    <p style="color:#555">My curated picks across supplements, tools, and wellness.</p>
-    <div class="category-price">Explore →</div>
-  </div>
-</div>
-
-  </section>
-
-  <!-- Collaboration -->
-  <section id="collaborate" class="collaboration">
-    <div class="container">
-      <h2 class="section-title" style="color:#fff">Let's Collaborate</h2>
-      <p style="margin:0 auto 1rem;max-width:780px">Partner with me to amplify healing in our communities. Bloggers, researchers, doctors, and holistic advocates welcome.</p>
-      <div class="collab-types">
-        <div class="collab-card">
-          <h3>🤝 Content Collaboration</h3>
-          <p>Joint articles, challenges, and educational content that drive real outcomes.</p>
-          <button class="cta-button" onclick="location.href='mailto:askdogood@gmail.com?subject=Content Collaboration Inquiry'">Partner With Me</button>
-        </div>
-        <div class="collab-card">
-          <h3>🔬 Research Partnerships</h3>
-          <p>Validate and share evidence-based natural healing methods together.</p>
-          <button class="cta-button" onclick="location.href='mailto:askdogood@gmail.com?subject=Research Partnership Inquiry'">Research Together</button>
-        </div>
-        <div class="collab-card">
-          <h3>💰 Affiliate Opportunities</h3>
-          <p>Promote aligned products and services while creating shared value.</p>
-          <button class="cta-button" onclick="location.href='mailto:askdogood@gmail.com?subject=Affiliate Partnership Inquiry'">Join Affiliate Program</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog (wrapped + anchored) -->
-<section id="blog" class="blog-preview">
-  <div class="container">
-    <h2 class="section-title">Latest Healing Insights</h2>
-    
-    <!-- Writer's Journey Section -->
-    <div style="background: rgba(45, 80, 22, 0.05); padding: 40px; border-radius: 15px; margin-bottom: 2rem; text-align: center;">
-      <h3 style="color: #2d5016; margin-bottom: 1.5rem; font-size: 1.8rem;">From Sick Patient to Healing Writer</h3>
-      
-      <div style="max-width: 800px; margin: 0 auto; text-align: left; color: #555; line-height: 1.8;">
-        <p style="margin-bottom: 1.5rem;">Writing saved my life before I even knew I was dying. At 12 years old, I started journaling my symptoms when doctors couldn't figure out what was wrong with me. Those early notebooks became my first health detective work.</p>
-        
-        <p style="margin-bottom: 1.5rem;">Through high school, I wrote poetry about feeling different, about energy crashes, about watching friends eat foods that made me sick. I didn't know I was documenting autoimmune disease - I just knew writing helped me process the isolation.</p>
-        
-        <p style="margin-bottom: 1.5rem;">When I finally got my Graves disease diagnosis at 22, I started blogging my healing journey. Every supplement tried, every food eliminated, every small victory documented. Those raw, honest posts connected with people going through similar struggles.</p>
-        
-        <p style="margin-bottom: 1.5rem;"><strong style="color: #2d5016;">Now my writing serves a bigger purpose:</strong> turning my pain into protocols that actually help people heal. Every article comes from lived experience, every tip has been tested in my own body first.</p>
-        
-        <p style="margin-bottom: 0; font-style: italic; color: #4a7c26;">I write because when you're sick and searching for answers at 3 AM, you need someone who's been there to tell you what really works.</p>
-      </div>
-    </div>
-
-    <div class="blog-grid" id="blogGrid">
-      <!-- BLOG 1 -->
-      <article class="blog-card">
-        <div class="blog-image">
-          <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1200&q=60" alt="Leafy greens and gut health">
-        </div>
-        <div class="blog-content">
-          <h3 class="blog-title">How I Cured My IBS Naturally</h3>
-          <p class="blog-excerpt">The complete protocol that eliminated 7 years of digestive suffering—prebiotics, enzymes, and strategic elimination…</p>
-          <a href="how-i-cured-my-ibs-naturally.html" class="cta-button" style="padding:.5rem 1rem;font-size:.9rem">Read Full Story</a>
-        </div>
-      </article>
-
-      <!-- BLOG 2 -->
-      <article class="blog-card">
-        <div class="blog-image">
-          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=60" alt="Calm energy and thyroid wellness">
-        </div>
-        <div class="blog-content">
-          <h3 class="blog-title">Beating Graves Disease Without Meds</h3>
-          <p class="blog-excerpt">From thyroid storm to complete healing using targeted nutrition and lifestyle changes…</p>
-          <a href="beating-graves-disease-without-meds.html" class="cta-button" style="padding:.5rem 1rem;font-size:.9rem">Read Full Story</a>
-        </div>
-      </article>
-
-      <!-- BLOG 3 -->
-      <article class="blog-card">
-        <div class="blog-image">
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=60" alt="Superfoods assortment">
-        </div>
-        <div class="blog-content">
-          <h3 class="blog-title">Top 10 Superfoods for Autoimmune Healing</h3>
-          <p class="blog-excerpt">The specific foods that helped reverse my autoimmune conditions and how to use them…</p>
-          <a href="top-10-superfoods-for-autoimmune-healing.html" class="cta-button" style="padding:.5rem 1rem;font-size:.9rem">Read Full Story</a>
-        </div>
-      </article>
-    </div>
-
-    <div style="text-align:center;margin-top:16px">
-      <a href="blog.html" class="cta-button" style="padding:.7rem 1.2rem">View All Posts</a>
-    </div>
-  </div>
-</section>
-
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <div class="container">
-      <h2>Join the Healing Revolution</h2>
-      <p>Get weekly tips, success stories, and exclusive content.</p>
-      <form id="newsletter-form" class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-        <input type="email" id="newsletter-email" placeholder="Your email address" required>
-        <button type="submit">Join Now</button>
-      </form>
-      <div id="newsletter-message" style="margin-top:10px;display:none"></div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-        <div class="footer-content">
-            <div>
-                <h3>AskDoGood</h3>
-                <p>Transforming lives through evidence-based natural health solutions.</p>
-                <p>Fort Washington, MD</p>
-                <p>Email: askdogood@gmail.com</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="#scanner" style="color: #ccc; text-decoration: none;">Health Scanner</a></li>
-                    <li><a href="#rewards" style="color: #ccc; text-decoration: none;">NFT Rewards</a></li>
-                    <li><a href="#shop" style="color: #ccc; text-decoration: none;">Shop</a></li>
-                    <li><a href="#blog" style="color: #ccc; text-decoration: none;">Blog</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Health Resources</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="#" style="color: #ccc; text-decoration: none;">Thyroid Health Guide</a></li>
-                    <li><a href="#" style="color: #ccc; text-decoration: none;">IBS Recovery Plan</a></li>
-                    <li><a href="#" style="color: #ccc; text-decoration: none;">Meal Prep Guide</a></li>
-                    <li><a href="#" style="color: #ccc; text-decoration: none;">Supplement Guide</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                    <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                    <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
-                    <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
-                    <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="disclaimer">
-            <strong>IMPORTANT MEDICAL DISCLAIMER:</strong> The information provided on this website is for educational and informational purposes only and is not intended as medical advice. I am not a licensed medical doctor, and the content should not be used to diagnose, treat, cure, or prevent any disease. Always consult with a qualified healthcare professional before making any changes to your diet, exercise routine, or health regimen, especially if you have existing medical conditions or are taking medications. Individual results may vary, and what works for one person may not work for another. This site may contain affiliate links, and I may earn a commission from purchases made through these links at no additional cost to you.
-        </div>
-  </footer>
-
-  <!-- Back to Top -->
-  <button class="fab-top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-
-    function showProducts(category){
-      document.querySelectorAll('[id$="-display"]').forEach(el=>el.style.display='none');
-      if(category==='ebooks'){ const el=document.getElementById('ebooks-display'); if(el){ el.style.display='block'; el.scrollIntoView({behavior:'smooth'}); } }
-    }
-
-    function loadWordPressBlog(slug){ alert('Connect your WordPress URL then open /'+slug); }
-    async function loadAllBlogs(){ try{ const r=await fetch('https://askdogood.com/wp-json/wp/v2/posts?per_page=9'); if(!r.ok) throw 0; const posts=await r.json(); const grid=document.getElementById('blogGrid'); posts.forEach(p=>{ const c=document.createElement('article'); c.className='blog-card'; c.innerHTML=`<div class="blog-image">🌿</div><div class="blog-content"><h3 class="blog-title">${p.title.rendered}</h3><p class="blog-excerpt">${p.excerpt.rendered.replace(/<[^>]*>/g,'').slice(0,150)}…</p><a class="cta-button" style="padding:.5rem 1rem;font-size:.9rem" href="${p.link}" target="_blank" rel="noopener">Read Full Story</a></div>`; grid.appendChild(c);}); }catch(e){ /* silent fail */ } }
-
-    function subscribeNewsletter(e){
-      e.preventDefault();
-      const email=document.getElementById('newsletter-email').value.trim();
-      const msg=document.getElementById('newsletter-message');
-      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ msg.textContent='⚠️ Please enter a valid email.'; msg.style.display='block'; return; }
-      msg.innerHTML='🎉 Welcome to the healing revolution! Check your inbox for a welcome note.'; 
-      msg.style.display='block';
-      document.getElementById('newsletter-form').reset();
-    }
-  </script>
-
-  <!-- Stripe Checkout (load last; one time only) -->
-  <script src="https://js.stripe.com/v3"></script>
-  <script>
-    // Expose globally so inline onclick="buy('...')" can find it (if used elsewhere)
-    window.buy = async function(productKey){
-      try {
-        const resp = await fetch('/api/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ product: productKey })
-        });
-        const data = await resp.json();
-        if (!data?.id) throw new Error(data?.error || 'No session from backend');
-        const stripe = Stripe(data.pk);
-        const { error } = await stripe.redirectToCheckout({ sessionId: data.id });
-        if (error) alert(error.message);
-      } catch (e) {
-        alert('Checkout error: ' + e.message);
-      }
-    };
-  </script>
-  <script>
-        function startScanner() {
-            // This would integrate with camera API and ML Kit for barcode scanning
-            alert('Scanner feature coming soon! This will use your device camera to scan food products and provide instant health analysis for diabetes and high blood pressure.');
-            
-            // Future implementation would include:
-            // 1. Camera access
-            // 2. Barcode/ingredient recognition
-            // 3. Database lookup for health analysis
-            // 4. Points/badge system integration
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.backgroundColor = 'rgba(255,255,255,0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.backgroundColor = 'var(--bg-light)';
-                header.style.backdropFilter = 'none';
-            }
-        });
-    </script>
-</body>
-</html>
-<!-- deploy ping -->
