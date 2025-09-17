@@ -160,23 +160,38 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Transform Your Health Naturally</h1>
-      <div class="hero-image">
-        <img src="https://i.imgur.com/H4QoEUE.png" alt="Health Transformation Icon">
-      </div>
-      <p class="hero-subtitle">I'm the dopest female in holistic wellness—empowering communities to heal naturally. From beating Graves disease to curing IBS: real results, real transparency.</p>
-      <a href="#services" class="cta-button">Start Your Healing Journey</a>
-
-      <div class="hero-stats">
-        <div class="stat-item"><div class="stat-number">7</div><div class="stat-label">Years IBS Free</div></div>
-        <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Autoimmune Reversals</div></div>
-        <div class="stat-item"><div class="stat-number">100</div><div class="stat-label">% Natural Approach</div></div>
-      </div>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Transform Your Health Naturally</h1>
+    <div class="hero-image">
+      <img src="https://i.imgur.com/H4QoEUE.png" alt="Health Transformation Icon">
     </div>
-  </section>
+    <p class="hero-subtitle">
+      Empowering you to heal naturally with evidence-based protocols, real results, and real transparency.<br>
+      <strong>NEW:</strong> Scan your receipts, earn points, and redeem gifts for your wellness journey!
+    </p>
+    <a href="#scanner" class="cta-button" style="margin-bottom:1rem;">Try the Health Scanner App</a>
+    <a href="#rewards" class="cta-button" style="background:linear-gradient(45deg,#00ff88,#00cc6a);color:#222;margin-left:10px;">Earn Rewards & Gifts</a>
 
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-number">7</div><div class="stat-label">Years IBS Free</div></div>
+      <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Autoimmune Reversals</div></div>
+      <div class="stat-item"><div class="stat-number">100</div><div class="stat-label">% Natural Approach</div></div>
+      <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">Health Scans</div></div>
+      <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">Success Stories</div></div>
+    </div>
+
+    <div style="margin-top:2rem;">
+      <h3 style="color:#a8d46f;">How It Works</h3>
+      <ol style="text-align:left;max-width:500px;margin:0 auto 1rem;color:#eee;">
+        <li>Scan your grocery receipts using our app.</li>
+        <li>Earn points for healthy purchases and activities.</li>
+        <li>Redeem points for holistic health products and free gifts!</li>
+      </ol>
+      <a href="#rewards" class="cta-link" style="color:#ff6b35;font-weight:700;">View Rewards Catalog</a>
+    </div>
+  </div>
+</section>
   <!-- Collaboration -->
   <section id="collaborate" class="collaboration">
     <div class="container">
@@ -397,6 +412,22 @@
       }
     };
   </script>
+  
+<script>
+  function scannerBetaSignup(e){
+    e.preventDefault();
+    const email = document.getElementById('scanner-beta-email').value.trim();
+    const msg = document.getElementById('scanner-beta-message');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      msg.textContent = '⚠️ Please enter a valid email.';
+      msg.style.display = 'block';
+      return;
+    }
+    msg.innerHTML = '🎉 You\'re on the beta list! Watch your inbox for early access details.';
+    msg.style.display = 'block';
+    document.getElementById('scanner-beta-form').reset();
+  }
+</script>
 </body>
 </html>
 
@@ -512,38 +543,47 @@
     </div>
   </section>
 
-  <!-- Revolutionary Health Scanner -->
   <section class="features-section" id="scanner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px; color: white;">
-    <div class="container">
-      <h2 class="section-title" style="color: white;">Revolutionary Health Scanner App</h2>
-      <p style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">AI-Powered Health Assessment in 60 Seconds</p>
-      
-      <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-        <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
-          <h3>Instant Analysis</h3>
-          <p>Advanced algorithms analyze your symptoms, lifestyle, and health markers</p>
-        </div>
-        <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
-          <h3>Personalized Insights</h3>
-          <p>Get customized recommendations based on your unique health profile</p>
-        </div>
-        <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
-          <h3>Progress Tracking</h3>
-          <p>Monitor your health improvements with daily wellness scores</p>
-        </div>
+  <div class="container">
+    <h2 class="section-title" style="color: white;">Revolutionary Health Scanner App</h2>
+    <p style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">AI-Powered Health Assessment in 60 Seconds</p>
+    
+    <!-- Demo Video (replace with your own link if available) -->
+    <div style="text-align:center;margin-bottom:2rem;">
+      <iframe width="420" height="235" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Health Scanner Demo" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+    </div>
+    
+    <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+      <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
+        <h3>Instant Analysis</h3>
+        <p>Advanced algorithms analyze your symptoms, lifestyle, and health markers</p>
       </div>
-      
-      <div style="text-align: center;">
-        <h3>Join the Beta Testing Program</h3>
-        <p>Be among the first to experience the future of personal health monitoring</p>
-        <button style="background: linear-gradient(45deg, #00ff88, #00cc6a); color: #000; border: none; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; cursor: pointer; font-weight: bold;">Get Early Access</button>
-        <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Limited spots available • No credit card required</p>
+      <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+        <h3>Personalized Insights</h3>
+        <p>Get customized recommendations based on your unique health profile</p>
+      </div>
+      <div class="feature-card" style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
+        <h3>Progress Tracking</h3>
+        <p>Monitor your health improvements with daily wellness scores</p>
       </div>
     </div>
-  </section>
+    
+    <div style="text-align: center;">
+      <h3>Join the Beta Testing Program</h3>
+      <p>Be among the first to experience the future of personal health monitoring</p>
+      <!-- Beta signup form -->
+      <form id="scanner-beta-form" style="display:inline-block;margin-bottom:1rem;" onsubmit="scannerBetaSignup(event)">
+        <input type="email" id="scanner-beta-email" placeholder="Your email address" required style="padding:10px 18px;border-radius:24px;border:none;min-width:220px;">
+        <button type="submit" style="background: linear-gradient(45deg, #00ff88, #00cc6a); color: #000; border: none; padding: 10px 28px; font-size: 1rem; border-radius: 50px; cursor: pointer; font-weight: bold;">Get Early Access</button>
+      </form>
+      <div id="scanner-beta-message" style="margin-top:10px;display:none"></div>
+      <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">Limited spots available • No credit card required</p>
+    </div>
+  </div>
+</section>
 
   <!-- Gamification -->
   <section class="gamification" id="rewards">
