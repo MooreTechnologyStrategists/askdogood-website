@@ -136,7 +136,32 @@
 
     @media(max-width:900px){.about-content{grid-template-columns:1fr}.hero h1{font-size:2.4rem}}
     @media(max-width:480px){.about-photos img{width:170px;height:170px}.service-thumb{width:160px;height:160px}}
-  </style>
+    /* ...existing code... */
+    @media (max-width: 600px) {
+  .hero-content, .about-content, .services-grid, .shop-categories, .blog-grid, .collab-types, .rewards-grid, .credentials-grid, .stats-grid, .testimonials > .container > div, .faq-section > .container > div {
+    grid-template-columns: 1fr !important;
+    padding: 12px !important;
+  }
+  .cta-button, .newsletter-form button {
+    font-size: 1rem !important;
+    padding: 1rem 1.2rem !important;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hero h1, .section-title {
+    font-size: 2rem !important;
+  }
+  .stat-item, .feature-card, .reward-card, .credential-item {
+    min-width: unset !important;
+    padding: 12px !important;
+  }
+  .testimonials img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+/* ...existing code... */
+ </style>
 </head>
 <body>
 <div id="welcome-banner" style="background:linear-gradient(45deg,#ffefba,#ffffff);color:#222;padding:18px 0;text-align:center;font-size:1.1rem;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
@@ -285,62 +310,7 @@
     </div>
   </section>
 
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <div class="container">
-      <h2>Join the Healing Revolution</h2>
-      <p>Get weekly tips, success stories, and exclusive content.</p>
-      <form id="newsletter-form" class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-        <input type="email" id="newsletter-email" placeholder="Your email address" required>
-        <button type="submit">Join Now</button>
-      </form>
-      <div id="newsletter-message" style="margin-top:10px;display:none"></div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="footer-content">
-      <div>
-        <h3>Ask DoGood</h3>
-        <p>Transforming lives through evidence-based natural health solutions.</p>
-        <p>Fort Washington, MD</p>
-        <p>Email: askdogood@gmail.com</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="#scanner" style="color: #ccc; text-decoration: none;">Health Scanner</a></li>
-          <li><a href="#rewards" style="color: #ccc; text-decoration: none;">NFT Rewards</a></li>
-          <li><a href="#shop" style="color: #ccc; text-decoration: none;">Shop</a></li>
-          <li><a href="#blog" style="color: #ccc; text-decoration: none;">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Health Resources</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="thyroid-healing-system.html" style="color: #ccc; text-decoration: none;">Thyroid Health Guide</a></li>
-          <li><a href="ibs-freedom-protocol.html" style="color: #ccc; text-decoration: none;">IBS Recovery Plan</a></li>
-          <li><a href="superfood-meal-prep-guide.html" style="color: #ccc; text-decoration: none;">Meal Prep Guide</a></li>
-          <li><a href="autoimmune-recovery-guide.html" style="color: #ccc; text-decoration: none;">Supplement Guide</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Follow Us</h4>
-        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-          <a href="https://instagram.com/askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com/askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
-          <a href="https://youtube.com/@askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
-          <a href="https://tiktok.com/@askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="disclaimer">
-      <strong>IMPORTANT MEDICAL DISCLAIMER:</strong> The information provided on this website is for educational and informational purposes only and is not intended as medical advice. I am not a licensed medical doctor, and the content should not be used to diagnose, treat, cure, or prevent any disease. Always consult with a qualified healthcare professional before making any changes to your diet, exercise routine, or health regimen, especially if you have existing medical conditions or are taking medications. Individual results may vary, and what works for one person may not work for another. This site may contain affiliate links, and I may earn a commission from purchases made through these links at no additional cost to you.
-    </div>
-  </footer>
-
+ 
   <!-- Back to Top -->
   <button class="fab-top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
@@ -678,9 +648,126 @@
       </div>
     </div>
   </section>
-
+  <!-- Place after the Social Proof section, before Shop -->
+<section class="testimonials" style="background:#fafafa;padding:3rem 0;">
+  <div class="container">
+    <h2 class="section-title" style="color:#2d5016;">Real Success Stories</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:2rem;">
+      <!-- Testimonial 1 -->
+      <div style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.08);padding:2rem;text-align:center;">
+        <img src="https://i.imgur.com/EdwM5hx.png" alt="Testimonial user" style="width:70px;height:70px;border-radius:50%;margin-bottom:1rem;">
+        <p style="font-size:1.1rem;color:#333;font-style:italic;">"I reversed my thyroid issues and IBS after 7 years of suffering. Ask DoGood gave me hope and a real plan!"</p>
+        <div style="margin-top:1rem;font-weight:700;color:#4a7c26;">— Jasmine T.</div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.08);padding:2rem;text-align:center;">
+        <img src="https://i.imgur.com/YbdgXex.png" alt="Testimonial user" style="width:70px;height:70px;border-radius:50%;margin-bottom:1rem;">
+        <p style="font-size:1.1rem;color:#333;font-style:italic;">"The scanner app makes healthy shopping fun. I love earning points for gifts and seeing my progress!"</p>
+        <div style="margin-top:1rem;font-weight:700;color:#4a7c26;">— Marcus L.</div>
+      </div>
+      <!-- Testimonial 3 -->
+      <div style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.08);padding:2rem;text-align:center;">
+        <img src="https://i.imgur.com/ceNFH8e.png" alt="Testimonial user" style="width:70px;height:70px;border-radius:50%;margin-bottom:1rem;">
+        <p style="font-size:1.1rem;color:#333;font-style:italic;">"I lost 30 pounds and finally feel energetic again. The personalized plan was a game changer."</p>
+        <div style="margin-top:1rem;font-weight:700;color:#4a7c26;">— Brianna S.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq-section" style="background:#fff;padding:3rem 0;">
+  <div class="container">
+    <h2 class="section-title" style="color:#2d5016;">Frequently Asked Questions</h2>
+    <div style="max-width:700px;margin:2rem auto 0;">
+      <details style="margin-bottom:1.2rem;">
+        <summary style="font-weight:700;color:#4a7c26;cursor:pointer;">How does the Health Scanner App work?</summary>
+        <div style="padding:1rem 0 0 0;color:#333;">
+          Simply upload or snap a photo of your grocery receipt. The app analyzes your purchases and awards points for healthy choices. You can track your progress and redeem points for gifts!
+        </div>
+      </details>
+      <details style="margin-bottom:1.2rem;">
+        <summary style="font-weight:700;color:#4a7c26;cursor:pointer;">Is my data safe and private?</summary>
+        <div style="padding:1rem 0 0 0;color:#333;">
+          Yes! Your data is encrypted and never shared. We respect your privacy and only use your info to improve your health experience.
+        </div>
+      </details>
+      <details style="margin-bottom:1.2rem;">
+        <summary style="font-weight:700;color:#4a7c26;cursor:pointer;">How do I redeem my points?</summary>
+        <div style="padding:1rem 0 0 0;color:#333;">
+          Visit the Rewards Catalog and choose your gift. Points are automatically deducted and your reward is shipped or emailed to you.
+        </div>
+      </details>
+      <details style="margin-bottom:1.2rem;">
+        <summary style="font-weight:700;color:#4a7c26;cursor:pointer;">Can I get a personalized healing plan?</summary>
+        <div style="padding:1rem 0 0 0;color:#333;">
+          Yes! Book a consult or purchase a Custom Healing Plan for tailored advice based on your health history and goals.
+        </div>
+      </details>
+      <details style="margin-bottom:1.2rem;">
+        <summary style="font-weight:700;color:#4a7c26;cursor:pointer;">What makes Ask DoGood different?</summary>
+        <div style="padding:1rem 0 0 0;color:#333;">
+          Real results, real transparency. All protocols are evidence-based and tested personally. We focus on natural healing, not just theory.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
   <!-- Shop -->
   <section id="shop" class="shop">
     <div class="container">
       <h2 class="section-title">Ask DoGood Shop</h2>
       <p style="text-align:center;color:#555;margin-bottom:16px">Curated products to support your healing journey.</p>
+       <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join the Healing Revolution</h2>
+      <p>Get weekly tips, success stories, and exclusive content.</p>
+      <form id="newsletter-form" class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+        <button type="submit">Join Now</button>
+      </form>
+      <div id="newsletter-message" style="margin-top:10px;display:none"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div>
+        <h3>Ask DoGood</h3>
+        <p>Transforming lives through evidence-based natural health solutions.</p>
+        <p>Fort Washington, MD</p>
+        <p>Email: askdogood@gmail.com</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#scanner" style="color: #ccc; text-decoration: none;">Health Scanner</a></li>
+          <li><a href="#rewards" style="color: #ccc; text-decoration: none;">NFT Rewards</a></li>
+          <li><a href="#shop" style="color: #ccc; text-decoration: none;">Shop</a></li>
+          <li><a href="#blog" style="color: #ccc; text-decoration: none;">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Health Resources</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="thyroid-healing-system.html" style="color: #ccc; text-decoration: none;">Thyroid Health Guide</a></li>
+          <li><a href="ibs-freedom-protocol.html" style="color: #ccc; text-decoration: none;">IBS Recovery Plan</a></li>
+          <li><a href="superfood-meal-prep-guide.html" style="color: #ccc; text-decoration: none;">Meal Prep Guide</a></li>
+          <li><a href="autoimmune-recovery-guide.html" style="color: #ccc; text-decoration: none;">Supplement Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <a href="https://instagram.com/askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com/@askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+          <a href="https://tiktok.com/@askdogood" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="disclaimer">
+      <strong>IMPORTANT MEDICAL DISCLAIMER:</strong> The information provided on this website is for educational and informational purposes only and is not intended as medical advice. I am not a licensed medical doctor, and the content should not be used to diagnose, treat, cure, or prevent any disease. Always consult with a qualified healthcare professional before making any changes to your diet, exercise routine, or health regimen, especially if you have existing medical conditions or are taking medications. Individual results may vary, and what works for one person may not work for another. This site may contain affiliate links, and I may earn a commission from purchases made through these links at no additional cost to you.
+    </div>
+  </footer>
