@@ -1,478 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AskDoGood - Transform Your Health Naturally | Holistic Wellness & AI Health Scanner</title>
-    <meta name="description" content="Transform your health naturally with evidence-based healing. AI-powered food scanner, holistic recipes, and personalized wellness guidance for thyroid, IBS, diabetes, and more.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Custom CSS -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-        * {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
-        }
-
-        .glass-effect {
-            backdrop-filter: blur(20px);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .hover-lift {
-            transition: all 0.3s ease;
-        }
-
-        .hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .scanner-pulse {
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #10b981, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <title>AskDoGood – Thyroid, Vegan Healing & Real-Life Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="AskDoGood helps tired, stressed, thyroid-struggling people reset their health with plant-based food, holistic strategies, and real talk."
+  />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <h1 class="text-2xl font-bold gradient-text">AskDoGood</h1>
-                    <span class="text-sm text-gray-600 hidden md:block">Transform Your Health Naturally</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#scanner" class="text-gray-700 hover:text-green-600 font-medium">Health Scanner</a>
-                    <a href="#services" class="text-gray-700 hover:text-green-600 font-medium">Services</a>
-                    <a href="#recipes" class="text-gray-700 hover:text-green-600 font-medium">Recipes</a>
-                    <a href="#story" class="text-gray-700 hover:text-green-600 font-medium">My Story</a>
-                    <button onclick="launchScanner()" class="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-2 rounded-full hover:from-green-600 hover:to-blue-600 transition-all scanner-pulse">
-                        🔬 Try Scanner
-                    </button>
-                </div>
-                <button class="md:hidden text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+<body>
+  <!-- Site Shell -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="img/logo-askdogood.png" alt="AskDoGood logo" class="logo" />
+        <div class="logo-text">
+          <span class="brand-name">AskDoGood</span>
+          <span class="brand-tagline">Holistic Health. Real Life. Real Talk.</span>
         </div>
-    </nav>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center overflow-hidden">
-        <!-- Hero Background Image -->
-        <div class="absolute inset-0">
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="start-here.html" class="nav-link">Start Here</a>
+        <a href="#paths" class="nav-link">Healing Paths</a>
+        <a href="#shop" class="nav-link">Shop Essentials</a>
+        <a href="#join" class="nav-link">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">For the tired, bloated, foggy & fed up.</p>
+          <h1>
+            Let’s Fix Your Thyroid<br />
+            And Your Life – Naturally.
+          </h1>
+          <p class="hero-sub">
+            I’m RoSeé – cloud architect, thyroid survivor, and holistic health nerd.
+            AskDoGood is where we reset your energy, hormones, and habits with real food,
+            honest conversations, and science-backed strategies.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="thyroid-reset.html" class="btn btn-primary">
+              Get the 7-Day Thyroid Reset (Free)
+            </a>
+            <a href="start-here.html" class="btn btn-secondary">
+              Start Here: Your Healing Gameplan
+            </a>
+          </div>
+
+          <ul class="hero-bullets">
+            <li>Beat brain fog & all-day exhaustion</li>
+            <li>Simple plant-based meals that don’t taste like punishment</li>
+            <li>Stress, sleep & mindset support for real life, not fantasy life</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+          <div class="hero-card">
             <img
-                src="https://images.unsplash.com/photo-1533012562945-b003ce1d3269?crop=entropy&cs=srgb&fm=jpg&q=85&w=2000"
-                alt="Serene meditation by the seashore at sunset"
-                class="w-full h-full object-cover"
+              src="img/thyroid-reset-mockup.png"
+              alt="7-Day Thyroid Reset Guide mockup"
+              class="hero-mockup"
             />
-            <div class="hero-gradient absolute inset-0"></div>
-        </div>
-
-        <!-- Hero Content -->
-        <div class="relative z-10 container mx-auto px-4 py-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
-                <div class="text-white space-y-8">
-                    <div class="space-y-4">
-                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
-                            Transform Your Health
-                            <span class="text-yellow-300">Naturally</span>
-                        </h1>
-                        <p class="text-xl text-gray-100 leading-relaxed">
-                            From sick and struggling to thriving naturally. After healing my thyroid, IBS, and autoimmune conditions without drugs, I'm sharing the exact protocols that transformed my 
-                            life—plus my revolutionary AI scanner that reads your food like a health detective.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="launchScanner()" class="glass-effect text-white px-8 py-4 rounded-full hover:bg-white hover:text-gray-800 transition-all font-semibold text-lg">
-                            🔬 Try Free Health Scanner
-                        </button>
-                        <button onclick="scrollToStory()" class="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-gray-800 transition-all font-semibold">
-                            Read My Healing Journey
-                        </button>
-                    </div>
-
-                    <!-- Social Proof -->
-                    <div class="flex items-center space-x-6">
-                        <div class="flex -space-x-2">
-                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=100&h=100&fit=crop&crop=face" alt="Happy user">
-                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Happy user">
-                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face" alt="Happy user">
-                        </div>
-                        <div>
-                            <p class="font-semibold">1000+ people healing naturally</p>
-                            <p class="text-sm text-gray-200">⭐⭐⭐⭐⭐ Transforming lives daily</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Content - Scanner Preview -->
-                <div class="glass-effect rounded-2xl p-6 hover-lift">
-                    <div class="bg-white rounded-xl p-6 space-y-4">
-                        <div class="text-center">
-                            <h3 class="text-2xl font-bold gradient-text mb-2">🔬 AI Health Scanner</h3>
-                            <p class="text-gray-600">Upload any food label for instant health analysis</p>
-                        </div>
-
-                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-green-400 hover:bg-green-50 transition-colors cursor-pointer" onclick="launchScanner()">
-                            <div class="text-4xl mb-4">🏪</div>
-                            <p class="text-gray-700 font-medium">Click to Upload Food Label</p>
-                            <p class="text-sm text-gray-500 mt-2">Get personalized insights for your health conditions</p>
-                        </div>
-
-                        <div class="grid grid-cols-3 gap-4 text-center">
-                            <div>
-                                <div class="text-2xl font-bold text-green-600">47+</div>
-                                <div class="text-xs text-gray-600">Health Conditions</div>
-                            </div>
-                            <div>
-                                <div class="text-2xl font-bold text-blue-600">AI</div>
-                                <div class="text-xs text-gray-600">Powered Analysis</div>
-                            </div>
-                            <div>
-                                <div class="text-2xl font-bold text-purple-600">Free</div>
-                                <div class="text-xs text-gray-600">To Try</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Health Scanner Section -->
-    <section id="scanner" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold gradient-text mb-6">Revolutionary AI Health Scanner</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Upload grocery receipts or food labels to get instant, personalized health insights based on your specific conditions.
-                    Our AI analyzes ingredients and provides targeted recommendations for thyroid, diabetes, inflammation, and 40+ other health conditions.
-                </p>
-            </div>
-
-            <!-- Scanner Integration -->
-            <div class="max-w-6xl mx-auto">
-                <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-8 shadow-xl">
-                    <div class="text-center mb-8">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Try the Scanner Now</h3>
-                        <p class="text-gray-600">No signup required - just upload and get results instantly</p>
-                    </div>
-
-                    <iframe
-                        src="https://foodscan-diabetes.preview.emergentagent.com"
-                        style="width: 100%; height: 800px; border: none; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);"
-                        title="AskDoGood Health Scanner">
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- Scanner Features -->
-            <div class="grid md:grid-cols-3 gap-8 mt-16">
-                <div class="text-center p-6 hover-lift">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl">🔍</span>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-3">Smart OCR Technology</h4>
-                    <p class="text-gray-600">Advanced text extraction reads ingredients from any food label or receipt with 95% accuracy</p>
-                </div>
-
-                <div class="text-center p-6 hover-lift">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl">🧠</span>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-3">AI Health Analysis</h4>
-                    <p class="text-gray-600">Personalized recommendations based on your specific health conditions and dietary needs</p>
-                </div>
-
-                <div class="text-center p-6 hover-lift">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl">📊</span>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-3">Dynamic Scoring</h4>
-                    <p class="text-gray-600">Real-time health scores from 0-10 based on ingredient quality and your health profile</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold gradient-text mb-6">Holistic Healing Services</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    From AI-powered food scanning to personalized healing protocols, transform your health with evidence-based natural solutions.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Scanner Service -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <span class="text-2xl text-white">🔬</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">AI Health Scanner</h3>
-                        <div class="text-4xl font-bold gradient-text mb-2">FREE</div>
-                        <p class="text-gray-600 mb-6">Upload food labels for instant health analysis with personalized recommendations</p>
-                        <button onclick="launchScanner()" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-full font-semibold hover:from-green-600 hover:to-green-700 transition-all">
-                            Try Scanner Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Consultation -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <span class="text-2xl text-white">💬</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Personal Consultation</h3>
-                        <div class="text-4xl font-bold gradient-text mb-2">$97</div>
-                        <p class="text-gray-600 mb-6">1-on-1 consultation to create your personalized healing protocol</p>
-                        <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all">
-                            Book Consultation
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Custom Plan -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift border-2 border-green-400">
-                    <div class="text-center">
-                        <div class="bg-green-500 text-white text-sm px-3 py-1 rounded-full mb-4 inline-block">Most Popular</div>
-                        <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <span class="text-2xl text-white">⭐</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Custom Healing Plan</h3>
-                        <div class="text-4xl font-bold gradient-text mb-2">$127</div>
-                        <p class="text-gray-600 mb-6">Complete healing protocol with supplements, meal plans, and ongoing support</p>
-                        <button class="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 rounded-full font-semibold hover:from-purple-600 hover:to-purple-700 transition-all">
-                            Get Custom Plan
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recipes Preview -->
-    <section id="recipes" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold gradient-text mb-6">Healing Recipes</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Discover delicious recipes designed for specific health conditions. Each recipe includes detailed health benefits and preparation instructions.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Recipe 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1600728257188-480e132c1610?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHx0dXJtZXJpYyUyMGJvd2x8ZW58MHx8fHwxNzU5NTM2NDk1fDA&ixlib=rb-4.1.0&q=85&w=400&h=250&fit=crop" alt="Anti-Inflammatory Turmeric Bowl" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold mb-2">Anti-Inflammatory Golden Bowl</h4>
-                        <p class="text-gray-600 text-sm mb-4">Perfect for autoimmune conditions with healing turmeric and superfoods</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-green-600 font-medium">⏱️ 20 mins</span>
-                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs">Anti-inflammatory</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recipe 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?crop=entropy&cs=srgb&fm=jpg&q=85&w=400&h=250&fit=crop" alt="Diabetes-Friendly Salmon" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold mb-2">Herb-Crusted Salmon</h4>
-                        <p class="text-gray-600 text-sm mb-4">Low-carb, high-protein meal perfect for blood sugar management</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-green-600 font-medium">⏱️ 25 mins</span>
-                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">Diabetes-friendly</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recipe 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
-                    <img src="https://images.pexels.com/photos/34147120/pexels-photo-34147120.jpeg?w=400&h=250&fit=crop" alt="Gut-Healing Soup" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold mb-2">Gut-Healing Bone Broth</h4>
-                        <p class="text-gray-600 text-sm mb-4">Nutrient-dense soup designed to heal and seal the gut lining</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-green-600 font-medium">⏱️ 45 mins</span>
-                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs">Gut-healing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <button onclick="launchScanner()" class="bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:from-green-600 hover:to-blue-600 transition-all">
-                    🍽️ Discover More Healing Recipes
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Story Section -->
-    <section id="story" class="py-20 bg-gradient-to-br from-green-50 to-blue-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=srgb&fm=jpg&q=85&w=600&h=600&fit=crop" alt="Wellness journey meditation" class="rounded-2xl shadow-xl">
-                    </div>
-                    <div class="space-y-6">
-                        <h2 class="text-4xl font-bold gradient-text">My Healing Journey</h2>
-                        <div class="space-y-4 text-gray-700 leading-relaxed">
-                            <p class="text-lg">
-                                After struggling with thyroid issues, IBS, and autoimmune conditions for years, I discovered that conventional medicine wasn't enough.
-                            </p>
-                            <p>
-                                Through evidence-based holistic healing, superfoods, herbs, and lifestyle changes, I completely transformed my health. Now I help others do the same.
-                            </p>
-                            <p>
-                                The AI Health Scanner was born from my passion to make personalized nutrition accessible to everyone, combining ancient wisdom with modern technology.
-                            </p>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=80&h=80&fit=crop&crop=face" alt="Your photo" class="w-16 h-16 rounded-full border-4 border-white shadow-lg">
-                            <div>
-                                <div class="font-semibold text-lg">AskDoGood</div>
-                                <div class="text-gray-600">Holistic Health Expert & AI Innovation Pioneer</div>
-                            </div>
-                        </div>
-                        <button class="bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:from-green-600 hover:to-blue-600 transition-all">
-                            Read Full Story
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Health?</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">
-                Join thousands of people using our AI Health Scanner to make better food choices and heal naturally.
+            <h2 class="hero-card-title">7-Day Thyroid Reset</h2>
+            <p class="hero-card-text">
+              Daily steps, food swaps, and mindset shifts to start balancing your thyroid
+              and rebuilding your energy in one focused week.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="launchScanner()" class="glass-effect text-white px-8 py-4 rounded-full hover:bg-white hover:text-gray-800 transition-all font-semibold text-lg">
-                    🔬 Try Free Scanner Now
-                </button>
-                <a href="https://www.calendly.com/askdogood" target="_blank" class="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-gray-800 transition-all font-semibold inline-block text-center">
-                    📞 Book Consultation
-                </a>
-            </div>
+            <a href="thyroid-reset.html" class="hero-card-link">See what’s inside →</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold gradient-text mb-4">AskDoGood</h3>
-                    <p class="text-gray-400">Transform your health naturally with evidence-based holistic healing and AI-powered insights.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Tools</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" onclick="launchScanner()" class="hover:text-green-400">Health Scanner</a></li>
-                        <li><a href="#recipes" class="hover:text-green-400">Healing Recipes</a></li>
-                        <li><a href="#" class="hover:text-green-400">Meal Planner</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#services" class="hover:text-green-400">Consultations</a></li>
-                        <li><a href="#services" class="hover:text-green-400">Custom Plans</a></li>
-                        <li><a href="#" class="hover:text-green-400">Support Groups</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Connect</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#story" class="hover:text-green-400">About</a></li>
-                        <li><a href="#" class="hover:text-green-400">Blog</a></li>
-                        <li><a href="#" class="hover:text-green-400">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2025 AskDoGood. Transform your health naturally with holistic wellness.</p>
-            </div>
+    <!-- ABOUT ROSEE -->
+    <section class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2>Meet RoSeé – Tech Brain, Healing Heart</h2>
+          <p>
+            I’m a cloud architect, disabled Army vet, and thyroid warrior who watched
+            my own body and my community pay the price for stress, bad food, and
+            broken systems.
+          </p>
+          <p>
+            AskDoGood is my answer – a place where Black and brown families (and
+            anybody else who needs it) get practical, affordable ways to eat better,
+            think clearer, move more, and actually feel like themselves again.
+          </p>
+          <ul class="checklist">
+            <li>20+ years solving complex problems in tech & life</li>
+            <li>Beat thyroid chaos using nutrition, labs & lifestyle changes</li>
+            <li>Teaching communities how to heal without losing their culture</li>
+          </ul>
+          <a href="start-here.html" class="text-link">Read the full AskDoGood story →</a>
         </div>
-    </footer>
+        <div class="about-highlight">
+          <h3>What We Do Here</h3>
+          <p>
+            We don’t do shame. We don’t do starvation. We don’t do fake perfection.
+          </p>
+          <p>
+            We do step-by-step healing, plant-based glow-ups, nervous system resets,
+            and real-life plans built for people who still have jobs, kids, and
+            responsibilities.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <!-- JavaScript -->
+    <!-- HEALING PATHS -->
+    <section id="paths" class="section">
+      <div class="container">
+        <h2 class="section-title">Choose Your Healing Path</h2>
+        <p class="section-sub">
+          Start where your body is yelling the loudest. We’ll expand from there.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="pill">Thyroid & Hormones</span>
+            <h3>Balance the Gland That Controls Everything</h3>
+            <p>
+              Learn how your thyroid affects weight, mood, periods, sleep and more –
+              and what to do about it with food, labs, and lifestyle.
+            </p>
+            <ul class="card-list">
+              <li>Thyroid 101 – why it matters so much</li>
+              <li>Thyroid, menopause & mood swings</li>
+              <li>Key nutrients your thyroid is begging for</li>
+            </ul>
+            <a href="thyroid-reset.html" class="btn btn-outline">Start Thyroid Reset →</a>
+          </article>
+
+          <article class="card">
+            <span class="pill pill-alt">Plant-Based Healing</span>
+            <h3>Vegan, But Make It Seasoned</h3>
+            <p>
+              No bland salads. We focus on budget-friendly, Black-kitchen-approved
+              plant-based meals that support hormones, heart, and gut.
+            </p>
+            <ul class="card-list">
+              <li>Why a vegan lifestyle is so powerful</li>
+              <li>Staple grocery list that won’t break you</li>
+              <li>Comfort food remixes your auntie will eat</li>
+            </ul>
+            <a href="#" class="btn btn-outline">See Starter Recipes →</a>
+          </article>
+
+          <article class="card">
+            <span class="pill pill-muted">Mind, Stress & Soul</span>
+            <h3>Because Your Nervous System Is Tired Too</h3>
+            <p>
+              Panic, burnout, “I can’t keep up” – we address the mental, spiritual,
+              and emotional load that sits on top of your health.
+            </p>
+            <ul class="card-list">
+              <li>Simple nervous system reset rituals</li>
+              <li>Stress & blood pressure, especially in our communities</li>
+              <li>Gentle mindset work for real-world trauma</li>
+            </ul>
+            <a href="#join" class="btn btn-outline">Get Support →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- THIS WEEK PLAN -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Your Week 1 Healing Gameplan</h2>
+        <p class="section-sub">
+          Based on the AskDoGood Week-1 checklist – one small focus per day so you
+          don’t burn out on Day 2.
+        </p>
+
+        <ol class="timeline">
+          <li>
+            <h3>Day 1 – Learn Your Thyroid</h3>
+            <p>Read the Thyroid 101 guide and understand what’s actually going on in your body.</p>
+          </li>
+          <li>
+            <h3>Day 2 – Clean Up Your Plate</h3>
+            <p>
+              Do a simple pantry audit. Reduce processed foods, add in greens, beans
+              and whole grains.
+            </p>
+          </li>
+          <li>
+            <h3>Day 3 – Stress Check</h3>
+            <p>
+              Identify the top 3 stress triggers and pick one calming ritual
+              (breathing, prayer, stretching, music).
+            </p>
+          </li>
+          <li>
+            <h3>Day 4 – Sleep Reset</h3>
+            <p>
+              Cut late-night scrolling, create a wind-down routine, and aim for a
+              consistent bedtime.
+            </p>
+          </li>
+          <li>
+            <h3>Days 5–7 – Practice & Reflect</h3>
+            <p>
+              Repeat the basics, track how you feel, and plan your next 30 days with
+              the 7-Day Thyroid Reset guide.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EMAIL / LEAD MAGNET -->
+    <section id="join" class="section section-highlight">
+      <div class="container highlight-inner">
+        <div>
+          <h2>Get the 7-Day Thyroid Reset + 10 Days of Support</h2>
+          <p>
+            When you grab the guide, I’ll walk you through it step-by-step by email:
+            food tweaks, supplements to consider, stress & sleep shifts, and how to
+            build a realistic 90-day plan.
+          </p>
+          <ul class="checklist">
+            <li>Daily email coaching for the first 10 days</li>
+            <li>PDF guide you can print, annotate, or save to your phone</li>
+            <li>Realistic steps for busy, overwhelmed humans</li>
+          </ul>
+        </div>
+
+        <form
+          class="optin-form"
+          action="#"
+          method="post"
+        >
+          <!-- Replace this with your actual form / provider later -->
+          <label class="form-label" for="name">First name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label class="form-label" for="email">Email address</label>
+          <input id="email" name="email" type="email" required />
+
+          <label class="form-checkbox">
+            <input type="checkbox" name="consent" required />
+            <span>
+              Yes, email me the Thyroid Reset and ongoing AskDoGood tips. I understand I can unsubscribe anytime.
+            </span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Me the Thyroid Reset
+          </button>
+          <p class="fine-print">
+            No spam. Just health, hope, and honest advice.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- SHOP / AFFILIATE SECTION -->
+    <section id="shop" class="section">
+      <div class="container">
+        <h2 class="section-title">AskDoGood Essentials</h2>
+        <p class="section-sub">
+          A curated list of products I actually use and recommend to support thyroid,
+          plant-based living, and peace of mind.
+        </p>
+
+        <div class="card-grid card-grid-4">
+          <article class="card small-card">
+            <h3>Selenium & Brazil Nuts</h3>
+            <p>Support thyroid hormone conversion and antioxidant protection.</p>
+            <a href="#" class="btn btn-outline btn-sm">Shop Selenium & Nuts →</a>
+          </article>
+
+          <article class="card small-card">
+            <h3>Plant-Based Staples</h3>
+            <p>Pantry basics for balanced vegan meals on a real budget.</p>
+            <a href="#" class="btn btn-outline btn-sm">Shop Vegan Pantry →</a>
+          </article>
+
+          <article class="card small-card">
+            <h3>Stress & Sleep Support</h3>
+            <p>Teas, magnesium and rituals that help your nervous system exhale.</p>
+            <a href="#" class="btn btn-outline btn-sm">Shop Calm & Sleep →</a>
+          </article>
+
+          <article class="card small-card">
+            <h3>Books That Changed My Health</h3>
+            <p>Thyroid, hormones, plant-based living, and mental resilience.</p>
+            <a href="#" class="btn btn-outline btn-sm">See Book List →</a>
+          </article>
+        </div>
+
+        <p class="fine-print">
+          Some links are affiliate links, which means I may earn a small commission
+          if you make a purchase – at no extra cost to you. I only recommend what I
+          truly stand behind.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AskDoGood. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="start-here.html">Start Here</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
     <script>
-        function launchScanner() {
-            window.open('https://foodscan-diabetes.preview.emergentagent.com', '_blank');
-        }
-
-        function scrollToStory() {
-            document.getElementById('story').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Add scroll animations
-        window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('.hover-lift');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        });
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+  </footer>
 </body>
 </html>
