@@ -687,4 +687,271 @@ body {
 .header-cta:hover {
   background: #22c55e;
 }
+/* ===========================
+   AUTOIMMUNE RECOVERY PAGE
+   =========================== */
+
+body.autoimmune-page {
+  background: #050607;
+  color: #f9fafb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Header */
+
+.autoimmune-page .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #111827;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(5, 6, 7, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+.autoimmune-page .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.autoimmune-page .brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: radial-gradient(circle at 30% 0, #22c55e, #16a34a, #052e16);
+  box-shadow: 0 0 24px rgba(34, 197, 94, 0.55);
+}
+
+.autoimmune-page .brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.autoimmune-page .brand-name {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.autoimmune-page .brand-tagline {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.autoimmune-page .header-cta {
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+.autoimmune-page .header-cta:hover {
+  background: #22c55e;
+}
+
+/* Layout */
+
+.autoimmune-page .product-shell {
+  padding: 3rem 3rem 4rem;
+}
+
+.autoimmune-page .product-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.6fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.autoimmune-page .product-card,
+.autoimmune-page .checkout-card {
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border-radius: 1.75rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.8);
+}
+
+/* Product content */
+
+.autoimmune-page .product-card h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.autoimmune-page .product-intro {
+  color: #e5e7eb;
+  margin-bottom: 1.4rem;
+  line-height: 1.6;
+}
+
+.autoimmune-page .price-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #111827;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.autoimmune-page .product-cover {
+  margin: 1.4rem 0 1.8rem;
+  text-align: center;
+}
+
+.autoimmune-page .product-cover img {
+  width: 70%;
+  max-width: 380px;
+  border-radius: 1.25rem;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85);
+}
+
+.autoimmune-page .product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.autoimmune-page .feature-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.autoimmune-page .feature-list li + li {
+  margin-top: 0.4rem;
+}
+
+/* Checkout card */
+
+.autoimmune-page .checkout-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.autoimmune-page .checkout-copy {
+  color: #d1d5db;
+  margin-bottom: 1.4rem;
+  font-size: 0.95rem;
+}
+
+.autoimmune-page .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #f9fafb;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(34, 197, 94, 0.6);
+  margin-bottom: 0.9rem;
+}
+
+.autoimmune-page .primary-btn:hover {
+  background: linear-gradient(135deg, #4ade80, #16a34a);
+}
+
+.autoimmune-page .fine-print {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
+}
+
+.autoimmune-page .help-text {
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.autoimmune-page .help-text a {
+  color: #22c55e;
+}
+
+/* Why section */
+
+.autoimmune-page .why-section {
+  margin-top: 3rem;
+}
+
+.autoimmune-page .why-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.autoimmune-page .why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.autoimmune-page .why-grid h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.autoimmune-page .why-grid p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+/* Footer */
+
+.autoimmune-page .site-footer {
+  padding: 2rem 3rem 3rem;
+  border-top: 1px solid #111827;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.autoimmune-page .site-footer a {
+  color: #22c55e;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .autoimmune-page .site-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .autoimmune-page .product-shell {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .autoimmune-page .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .autoimmune-page .product-cover img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .autoimmune-page .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
