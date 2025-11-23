@@ -149,5 +149,811 @@ body {
   bottom: -0.35rem;
   width: 0;
   height: 2px;
-  background: #22c
+  background: #22c55e;
+  border-radius: 999px;
+  transition: width 0.22s ease;
+}
+
+.home-page .site-nav a:hover::after {
+  width: 100%;
+}
+
+/* Header CTA */
+
+.home-page .header-cta {
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+  white-space: nowrap;
+}
+
+.home-page .header-cta:hover {
+  background: #22c55e;
+}
+
+/* Hamburger button – hidden on desktop */
+
+.home-page .nav-toggle {
+  display: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  padding: 0.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.home-page .nav-toggle span {
+  display: block;
+  height: 2px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+/* Desktop-centering */
+
+@media (min-width: 901px) {
+  .home-page .nav-inner {
+    gap: 2.5rem;
+  }
+
+  .home-page .site-nav {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* Mobile navbar */
+
+@media (max-width: 900px) {
+  .home-page .nav-inner {
+    padding: 0.9rem 1rem;
+  }
+
+  .home-page .nav-toggle {
+    display: inline-flex;
+  }
+
+  .home-page .site-nav,
+  .home-page .header-cta {
+    display: none;
+  }
+
+  .home-page.nav-open .site-nav,
+  .home-page.nav-open .header-cta {
+    display: flex;
+  }
+
+  .home-page.nav-open .site-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #020617;
+    padding: 0.9rem 1.2rem 1rem;
+    flex-direction: column;
+    gap: 0.9rem;
+    border-bottom: 1px solid #111827;
+  }
+
+  .home-page.nav-open .header-cta {
+    margin: 0.6rem 1.2rem 0.8rem;
+    justify-content: center;
+  }
+}
+
+/* ===========================
+   HERO (HOME PAGE)
+   =========================== */
+
+.hero {
+  padding: 4.5rem 0 3.5rem;
+  background:
+    radial-gradient(circle at 0 0, rgba(39, 212, 107, 0.16), transparent 55%),
+    radial-gradient(circle at 100% 0, rgba(39, 212, 107, 0.18), transparent 55%);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 2.8rem;
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 40rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--primary-muted);
+  margin-bottom: 0.4rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 3vw, 3.1rem);
+  line-height: 1.1;
+  margin: 0.2rem 0 1rem;
+}
+
+.hero-sub {
+  font-size: 0.98rem;
+  color: var(--text-soft);
+  max-width: 36rem;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 1.7rem 0 1.1rem;
+}
+
+.hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.hero-bullets li + li {
+  margin-top: 0.3rem;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  padding: 0.7rem 1.7rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, background 0.12s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #020304;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  background: rgba(39, 212, 107, 0.06);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-sm {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+}
+
+/* Hero visual */
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-glow {
+  position: absolute;
+  inset: 10% 5%;
+  background: radial-gradient(circle at 50% 0, rgba(39, 212, 107, 0.2), transparent 65%);
+  filter: blur(12px);
+  z-index: 0;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-alt);
+  border-radius: 24px;
+  padding: 1.6rem 1.5rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow-card);
+  max-width: 320px;
+}
+
+.hero-mockup {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 0.9rem;
+}
+
+.hero-card-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.hero-card-text {
+  margin: 0 0 0.7rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.hero-card-link {
+  font-size: 0.9rem;
+  color: var(--primary-muted);
+  text-decoration: none;
+}
+
+/* ===========================
+   ABOUT SECTION
+   =========================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about-photo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 999px;
+  border: 3px solid var(--primary);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-content {
+  max-width: 36rem;
+}
+
+/* ===========================
+   CARDS / HEALING PATHS
+   =========================== */
+
+.section-title {
+  font-size: 1.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.section-sub {
+  color: var(--text-soft);
+  max-width: 34rem;
+  font-size: 0.95rem;
+}
+
+/* Pills & labels */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: var(--primary-soft);
+  color: var(--primary-muted);
+  margin-bottom: 0.7rem;
+}
+
+.pill-alt {
+  background: rgba(39, 212, 160, 0.08);
+}
+
+.pill-muted {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Card grids */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem;
+  margin-top: 2.3rem;
+}
+
+.card-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card {
+  background: var(--bg-soft);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.5rem 1.6rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.card h3 {
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
+.card-list {
+  list-style: disc;
+  padding-left: 1.1rem;
+  margin: 0.6rem 0 1rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.small-card {
+  padding: 1.2rem 1.3rem 1.3rem;
+}
+
+/* Checklists */
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 1rem;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.85rem;
+  color: var(--primary-muted);
+}
+
+/* Timeline */
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin: 0 0 1.1rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0.2rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+/* ===========================
+   EMAIL / OPT-IN
+   =========================== */
+
+.highlight-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2.3rem;
+  align-items: flex-start;
+}
+
+.optin-form {
+  background: rgba(5, 6, 7, 0.94);
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+  color: var(--text-soft);
+}
+
+.optin-form input[type="text"],
+.optin-form input[type="email"] {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #050607;
+  color: var(--text);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.optin-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  margin: 0.4rem 0 0.9rem;
+}
+
+.form-checkbox input {
+  margin-top: 0.1rem;
+}
+
+.fine-print {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  margin-top: 0.4rem;
+}
+
+/* ===========================
+   LINKS & FOOTER
+   =========================== */
+
+.text-link {
+  color: var(--primary-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.2rem 0 1.5rem;
+  background: #050607;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* ===========================
+   RESPONSIVE – HOME
+   =========================== */
+
+@media (max-width: 900px) {
+  .hero-inner,
+  .about-grid,
+  .highlight-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .hero-visual {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .card-grid-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+  }
+
+  .container {
+    width: min(100% - 2rem, 100%);
+  }
+}
+
+/* ===========================
+   AUTOIMMUNE RECOVERY PAGE
+   =========================== */
+
+body.autoimmune-page {
+  background: #050607;
+  color: #f9fafb;
+}
+
+/* Header (autoimmune page uses simpler layout) */
+
+.autoimmune-page .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #111827;
+  background: rgba(5, 6, 7, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+.autoimmune-page .header-cta {
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+.autoimmune-page .header-cta:hover {
+  background: #22c55e;
+}
+
+/* Layout */
+
+.autoimmune-page .product-shell {
+  padding: 3rem 3rem 4rem;
+}
+
+.autoimmune-page .product-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.6fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.autoimmune-page .product-card,
+.autoimmune-page .checkout-card {
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border-radius: 1.75rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.8);
+}
+
+/* Product content */
+
+.autoimmune-page .product-card h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.autoimmune-page .product-intro {
+  color: #e5e7eb;
+  margin-bottom: 1.4rem;
+  line-height: 1.6;
+}
+
+.autoimmune-page .price-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #111827;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.autoimmune-page .product-cover {
+  margin: 1.4rem 0 1.8rem;
+  text-align: center;
+}
+
+.autoimmune-page .product-cover img {
+  width: 70%;
+  max-width: 380px;
+  border-radius: 1.25rem;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85);
+}
+
+.autoimmune-page .product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.autoimmune-page .feature-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.autoimmune-page .feature-list li + li {
+  margin-top: 0.4rem;
+}
+
+/* Checkout card */
+
+.autoimmune-page .checkout-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.autoimmune-page .checkout-copy {
+  color: #d1d5db;
+  margin-bottom: 1.4rem;
+  font-size: 0.95rem;
+}
+
+.autoimmune-page .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #f9fafb;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(34, 197, 94, 0.6);
+  margin-bottom: 0.9rem;
+}
+
+.autoimmune-page .primary-btn:hover {
+  background: linear-gradient(135deg, #4ade80, #16a34a);
+}
+
+.autoimmune-page .fine-print {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
+}
+
+.autoimmune-page .help-text {
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.autoimmune-page .help-text a {
+  color: #22c55e;
+}
+
+/* Why section */
+
+.autoimmune-page .why-section {
+  margin-top: 3rem;
+}
+
+.autoimmune-page .why-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.autoimmune-page .why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.autoimmune-page .why-grid h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.autoimmune-page .why-grid p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+/* Footer (autoimmune) */
+
+.autoimmune-page .site-footer {
+  padding: 2rem 3rem 3rem;
+  border-top: 1px solid #111827;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.autoimmune-page .site-footer a {
+  color: #22c55e;
+}
+
+/* Responsive – autoimmune page */
+
+@media (max-width: 900px) {
+  .autoimmune-page .site-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .autoimmune-page .product-shell {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .autoimmune-page .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .autoimmune-page .product-cover img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .autoimmune-page .why-grid {
+    grid-template-columns: 1fr;
+  }
 }
