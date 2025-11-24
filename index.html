@@ -11,46 +11,44 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body id="top" class="home-page">
-  <!-- Site Shell -->
-
   <!-- MAIN HEADER + NAV -->
   <header class="site-header">
-  <div class="container nav-inner">
-    <!-- Brand -->
-    <a href="/" class="brand">
-      <img
-        src="assets/img/logo/askdogood-navy.png"
-        alt="AskDoGood logo"
-        class="brand-logo"
-      />
-      <div class="brand-text">
-        <span class="brand-name">AskDoGood</span>
-        <span class="brand-tagline">Heal • Grow • Become Whole</span>
-      </div>
-    </a>
+    <div class="container nav-inner">
+      <!-- Brand -->
+      <a href="/" class="brand">
+        <img
+          src="assets/img/logo/askdogood-navy.png"
+          alt="AskDoGood logo"
+          class="brand-logo"
+        />
+        <div class="brand-text">
+          <span class="brand-name">AskDoGood</span>
+          <span class="brand-tagline">Heal • Grow • Become Whole</span>
+        </div>
+      </a>
 
-    <!-- Hamburger button (mobile) -->
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <!-- Nav menu -->
-    <nav class="site-nav">
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#paths">Healing Paths</a>
-      <a href="#join">Join</a>
-      <a href="#shop">Shop</a>
-    </nav>
+      <!-- Nav menu -->
+      <nav class="site-nav">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#paths">Healing Paths</a>
+        <a href="#join">Join</a>
+        <a href="#shop">Shop</a>
+      </nav>
 
-    <!-- Top-right CTA -->
-    <a href="autoimmune-recovery-guide.html" class="header-cta">
-      Autoimmune Guide
-    </a>
-  </div>
-</header>
+      <!-- Top-right CTA -->
+      <a href="autoimmune-recovery-guide.html" class="header-cta">
+        Autoimmune Guide
+      </a>
+    </div>
+  </header>
 
   <main>
     <!-- HERO -->
@@ -88,8 +86,8 @@
           <div class="hero-glow"></div>
           <div class="hero-card">
             <img
-              src="img/thyroid-reset-mockup.png"
-              alt="7-Day Thyroid Reset Guide mockup"
+              src="assets/img/downloads/7-day-thyroid-reset.png"
+              alt="7-Day Thyroid Reset Guide cover"
               class="hero-mockup"
             />
             <h2 class="hero-card-title">7-Day Thyroid Reset</h2>
@@ -192,6 +190,52 @@
               <li>Gentle mindset work for real-world trauma</li>
             </ul>
             <a href="#join" class="btn btn-outline">Get Support →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED GUIDES (Thyroid + Autoimmune) -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Featured Healing Guides</h2>
+        <p class="section-sub">
+          Deep-dive guides to help you reset your body with structure, compassion, and real-life strategies.
+        </p>
+
+        <div class="card-grid">
+          <!-- Thyroid Reset Guide -->
+          <article class="card">
+            <span class="pill">Guide</span>
+            <h3>7-Day Thyroid Reset</h3>
+            <p>
+              A focused 7-day blueprint to start calming inflammation, restoring energy, and understanding your thyroid in plain English.
+            </p>
+            <figure class="product-cover">
+              <img
+                src="assets/img/downloads/7-day-thyroid-reset.png"
+                alt="7-Day Thyroid Reset Guide cover"
+                class="product-cover-img"
+              />
+            </figure>
+            <a href="thyroid-reset.html" class="btn btn-outline">View the Thyroid Reset →</a>
+          </article>
+
+          <!-- Autoimmune Recovery Guide -->
+          <article class="card">
+            <span class="pill pill-alt">Premium Guide</span>
+            <h3>Autoimmune Recovery Guide</h3>
+            <p>
+              A science-aware, faith-rooted roadmap for rebuilding your body after autoimmune chaos, thyroid issues, chronic stress, and burnout.
+            </p>
+            <figure class="product-cover">
+              <img
+                src="assets/img/downloads/autoimmune-recovery-guide-3d-cover.png"
+                alt="Autoimmune Recovery Guide cover"
+                class="product-cover-img"
+              />
+            </figure>
+            <a href="autoimmune-recovery-guide.html" class="btn btn-outline">Explore the Autoimmune Guide →</a>
           </article>
         </div>
       </div>
@@ -339,3 +383,23 @@
       <div class="footer-links">
         <a href="start-here.html">Start Here</a>
         <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // simple mobile nav toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      if (navToggle && siteNav) {
+        navToggle.addEventListener("click", () => {
+          siteNav.classList.toggle("nav-open");
+          navToggle.classList.toggle("nav-open");
+        });
+      }
+    </script>
+  </footer>
+</body>
+</html>
