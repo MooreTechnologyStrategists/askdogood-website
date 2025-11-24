@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>7-Day Thyroid Reset | AskDoGood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="A 7-day thyroid reset guide to help you calm inflammation, restore energy, and understand your thyroid in plain English. By AskDoGood."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top" class="autoimmune-page">
+  <!-- MAIN HEADER + NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <!-- Brand -->
+      <a href="index.html" class="brand">
+        <img
+          src="assets/img/logo/askdogood-navy.png"
+          alt="AskDoGood logo"
+          class="brand-logo"
+        />
+        <div class="brand-text">
+          <span class="brand-name">AskDoGood</span>
+          <span class="brand-tagline">Heal • Grow • Become Whole</span>
+        </div>
+      </a>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav menu -->
+      <nav class="site-nav">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#paths">Healing Paths</a>
+        <a href="index.html#join">Join</a>
+        <a href="index.html#shop">Shop</a>
+      </nav>
+
+      <!-- Top-right CTA -->
+      <a href="autoimmune-recovery-guide.html" class="header-cta">
+        Autoimmune Guide
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN PRODUCT AREA -->
+  <main class="product-shell">
+    <section class="product-grid">
+      <!-- LEFT: product info -->
+      <article class="product-card">
+        <div class="price-pill">Free Download</div>
+        <h1>7-Day Thyroid Reset</h1>
+
+        <p class="product-intro">
+          A simple, compassionate 7-day blueprint to start calming inflammation,
+          steadying your energy, and finally understanding what your thyroid has
+          been trying to tell you — in plain English, with real-life steps.
+        </p>
+
+        <figure class="product-cover">
+          <img
+            src="assets/img/downloads/7-day-thyroid-reset.png"
+            alt="7-Day Thyroid Reset Guide cover"
+          />
+        </figure>
+
+        <h2>What’s inside</h2>
+        <ul class="feature-list">
+          <li>
+            <strong>Day-by-day roadmap:</strong>
+            7 focused days of food tweaks, nervous-system resets, and gentle movement
+            that fit into real life — not fantasy life.
+          </li>
+          <li>
+            <strong>Thyroid 101 in human language:</strong>
+            What TSH, T4 and T3 mean, how stress impacts your thyroid, and why
+            you’re not “crazy” or “lazy” — you’re depleted.
+          </li>
+          <li>
+            <strong>Anti-inflammatory food framework:</strong>
+            Simple ideas for breakfasts, lunches, and dinners that support hormones,
+            gut health, and blood sugar without being expensive or boring.
+          </li>
+          <li>
+            <strong>Stress & sleep rituals:</strong>
+            Quick nervous-system reset practices, breathing, and wind-down routines
+            to help your body finally feel safe enough to heal.
+          </li>
+          <li>
+            <strong>Tracking & reflection prompts:</strong>
+            Gentle journal prompts and symptom check-ins so you can see what actually
+            moves the needle for your energy, mood, and digestion.
+          </li>
+        </ul>
+      </article>
+
+      <!-- RIGHT: checkout / download -->
+      <aside class="checkout-card" id="checkout">
+        <h2>Get your free copy</h2>
+        <p class="checkout-copy">
+          Download the full 7-Day Thyroid Reset as a printable PDF you can keep on
+          your phone, laptop, or taped to the fridge.
+        </p>
+
+        <a class="primary-btn" href="downloads/thyroid-reset-guide.pdf" download>
+          Download the 7-Day Thyroid Reset (Free)
+        </a>
+
+        <p class="fine-print">
+          Digital PDF guide. No physical product shipped. Not medical advice — for educational
+          and lifestyle purposes only. Always consult your healthcare provider before
+          changing medication, supplements, or treatment plans.
+        </p>
+
+        <p class="help-text">
+          Need help or can’t access the file? <a href="mailto:askdogood@gmail.com">askdogood@gmail.com</a>
+        </p>
+      </aside>
+    </section>
+
+    <!-- WHY SECTION -->
+    <section class="why-section">
+      <h2>Why this reset works</h2>
+      <div class="why-grid">
+        <div>
+          <h3>Built from lived experience</h3>
+          <p>
+            Created from my own thyroid and autoimmune journey — the exact
+            patterns, food shifts, and daily practices that helped me climb out of
+            exhaustion, brain fog, and chaos one small step at a time.
+          </p>
+        </div>
+        <div>
+          <h3>Science-aware, soul-conscious</h3>
+          <p>
+            Thyroid and hormone basics, gut–brain science, blood sugar balance,
+            and stress physiology — wrapped in a real, compassionate, faith-rooted
+            approach that honors your whole self.
+          </p>
+        </div>
+        <div>
+          <h3>Made for tired, busy humans</h3>
+          <p>
+            No 40-step routines. You’ll focus on one main shift per day, with
+            options for when you’re wiped out and can only do the bare minimum —
+            and that minimum still counts.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AskDoGood. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="start-here.html">Start Here</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // simple mobile nav toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      if (navToggle && siteNav) {
+        navToggle.addEventListener("click", () => {
+          siteNav.classList.toggle("nav-open");
+          navToggle.classList.toggle("nav-open");
+        });
+      }
+    </script>
+  </footer>
+</body>
+</html>

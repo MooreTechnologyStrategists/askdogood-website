@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Autoimmune Recovery Guide | AskDoGood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="A science-aware, faith-rooted autoimmune recovery guide to help calm inflammation, rebuild energy, and restore balance after thyroid issues, chronic stress, and burnout."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top" class="autoimmune-page">
+  <!-- MAIN HEADER + NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <!-- Brand -->
+      <a href="index.html" class="brand">
+        <img
+          src="assets/img/logo/askdogood-navy.png"
+          alt="AskDoGood logo"
+          class="brand-logo"
+        />
+        <div class="brand-text">
+          <span class="brand-name">AskDoGood</span>
+          <span class="brand-tagline">Heal • Grow • Become Whole</span>
+        </div>
+      </a>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav menu -->
+      <nav class="site-nav">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#paths">Healing Paths</a>
+        <a href="index.html#join">Join</a>
+        <a href="index.html#shop">Shop</a>
+      </nav>
+
+      <!-- Top-right CTA -->
+      <a href="thyroid-reset.html" class="header-cta">
+        Thyroid Reset
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN PRODUCT AREA -->
+  <main class="product-shell">
+    <section class="product-grid">
+      <!-- LEFT: product info -->
+      <article class="product-card">
+        <div class="price-pill">$27</div>
+        <h1>Autoimmune Recovery Guide</h1>
+
+        <p class="product-intro">
+          A science-aware, faith-rooted blueprint to reset inflammation, rebuild energy,
+          and restore balance after autoimmune symptoms, thyroid complications, chronic
+          stress, and metabolic breakdown — especially in Black and brown bodies that
+          have carried too much for too long.
+        </p>
+
+        <figure class="product-cover">
+          <img
+            src="assets/img/downloads/autoimmune-recovery-guide-3d-cover.png"
+            alt="Autoimmune Recovery Guide 3D cover"
+          />
+        </figure>
+
+        <h2>What’s inside</h2>
+        <ul class="feature-list">
+          <li>
+            <strong>Foundations & Baseline Reset:</strong>
+            Gut repair, sleep rhythm, stress downshift, and gentle movement protocols
+            designed for tired, inflamed bodies — not gym rats.
+          </li>
+          <li>
+            <strong>Superfood & Elimination Framework:</strong>
+            Trigger mapping, sample meals, and a printable shopping list so you’re never
+            confused in the grocery aisle or stuck eating the same three “healthy” foods.
+          </li>
+          <li>
+            <strong>Supplement Strategy (Optional):</strong>
+            Clear guidance, safety notes, and timing so you don’t waste money guessing
+            on pills, powders, and potions that don’t serve your body.
+          </li>
+          <li>
+            <strong>Progress Tracker + 14-Day Kickstart:</strong>
+            Morning / night logs and a two-week structure so you can see what actually
+            moves the needle — energy, digestion, pain, and sleep.
+          </li>
+          <li>
+            <strong>Flare-Up Emergency Blueprint:</strong>
+            Exactly what to eat, what to avoid, and how to calm your system quickly
+            when symptoms spike, stress hits, or life blindsides you.
+          </li>
+        </ul>
+      </article>
+
+      <!-- RIGHT: checkout -->
+      <aside class="checkout-card" id="checkout">
+        <h2>Secure checkout</h2>
+        <p class="checkout-copy">
+          Encrypted Stripe payment (or your future checkout provider). Instant email receipt
+          and download link right after purchase.
+        </p>
+
+        <!-- Swap this href for your actual Stripe checkout URL when ready -->
+        <a class="primary-btn" href="downloads/autoimmune-recovery-guide.pdf" download>
+          Download the Autoimmune Recovery Guide — $27
+        </a>
+
+        <p class="fine-print">
+          Digital PDF guide. No physical product shipped. Not medical advice — for educational
+          and lifestyle purposes only. Always consult your healthcare provider before changing
+          medication, supplements, or treatment plans.
+        </p>
+
+        <p class="help-text">
+          Need help or didn’t get your file? <a href="mailto:askdogood@gmail.com">askdogood@gmail.com</a>
+        </p>
+      </aside>
+    </section>
+
+    <!-- WHY SECTION -->
+    <section class="why-section">
+      <h2>Why this guide works</h2>
+      <div class="why-grid">
+        <div>
+          <h3>Real-life healing, not theory</h3>
+          <p>
+            Built from my own multi-year autoimmune and thyroid battle — the foods,
+            rituals, labs, and frameworks that helped me calm inflammation and rebuild
+            my body step by step, without pretending I had unlimited time or money.
+          </p>
+        </div>
+        <div>
+          <h3>Science meets soul</h3>
+          <p>
+            Anti-inflammatory research, gut–brain science, nervous system work, and
+            blood sugar balance — wrapped inside a compassionate, faith-centered approach
+            that respects culture, community, and real-world trauma.
+          </p>
+        </div>
+        <div>
+          <h3>Built for busy, tired humans</h3>
+          <p>
+            Clear priorities, simple steps, and quick-start options so you can start
+            feeling a shift in days, not months — even if you’re juggling work, caregiving,
+            church, family, and chronic fatigue.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AskDoGood. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="start-here.html">Start Here</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // simple mobile nav toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      if (navToggle && siteNav) {
+        navToggle.addEventListener("click", () => {
+          siteNav.classList.toggle("nav-open");
+          navToggle.classList.toggle("nav-open");
+        });
+      }
+    </script>
+  </footer>
+</body>
+</html>
