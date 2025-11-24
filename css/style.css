@@ -125,7 +125,7 @@ body {
   padding: 1.2rem 1.5rem;
 }
 
-/* Nav links */
+/* Nav links (desktop default) */
 
 .home-page .site-nav {
   display: flex;
@@ -196,9 +196,21 @@ body {
   height: 2px;
   border-radius: 999px;
   background: #e5e7eb;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Desktop-centering */
+/* Turn hamburger into X when open */
+.home-page .nav-toggle.nav-open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.home-page .nav-toggle.nav-open span:nth-child(2) {
+  opacity: 0;
+}
+.home-page .nav-toggle.nav-open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Desktop distribution */
 
 @media (min-width: 901px) {
   .home-page .nav-inner {
@@ -211,42 +223,54 @@ body {
   }
 }
 
-/* Mobile navbar */
+/* ===========================
+   MOBILE NAVBAR
+   =========================== */
 
 @media (max-width: 900px) {
   .home-page .nav-inner {
     padding: 0.9rem 1rem;
   }
 
+  /* Show hamburger */
   .home-page .nav-toggle {
     display: inline-flex;
   }
 
-  .home-page .site-nav,
-  .home-page .header-cta {
-    display: none;
-  }
-
-  .home-page.nav-open .site-nav,
-  .home-page.nav-open .header-cta {
-    display: flex;
-  }
-
-  .home-page.nav-open .site-nav {
+  /* Mobile menu hidden by default */
+  .home-page .site-nav {
     position: absolute;
     left: 0;
     right: 0;
     top: 100%;
-    background: #020617;
+    margin-top: 0.5rem;
     padding: 0.9rem 1.2rem 1rem;
+    background: #020617;
+    border-bottom: 1px solid #111827;
+    display: none;
     flex-direction: column;
     gap: 0.9rem;
-    border-bottom: 1px solid #111827;
+    z-index: 30;
   }
 
-  .home-page.nav-open .header-cta {
-    margin: 0.6rem 1.2rem 0.8rem;
+  /* CTA hidden by default on mobile */
+  .home-page .header-cta {
+    display: none;
+  }
+
+  /* When JS adds .nav-open to site-nav, show dropdown */
+  .home-page .site-nav.nav-open {
+    display: flex;
+  }
+
+  /* When menu is open, show CTA under it */
+  .home-page .site-nav.nav-open ~ .header-cta {
+    display: flex;
     justify-content: center;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
   }
 }
 
